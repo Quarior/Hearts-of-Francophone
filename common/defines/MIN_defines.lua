@@ -1,6 +1,6 @@
 	-- Speed in game
 	--	VANILLA GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
-	NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.2, 0.175, 0.125, 0.0 }
+	NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.15, 0.125, 0.0 }
 	NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
 	NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 	NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 14 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
@@ -37,12 +37,14 @@
 	NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 25				-- Command Power sent attache usage cost
 	NDefines.NDiplomacy.BASE_SEND_ATTACHE_MAINTAIN_COST = 0
 
+	NDefines.NCountry.BASE_MAX_COMMAND_POWER = 120.0
+
 	-- 72 divisions par général
-	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 36
-	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72
+	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 35
+	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 35
 
     -- No XP for training
-	NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0000 -- 0.0015
+	NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015 -- 0.0015
 
 	-- FREE LICENCE
 	NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
@@ -75,21 +77,50 @@
 	-- GRIND
 	NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.1
 	NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = {1,1,1,0}  -- gave +1 to every officers on lvl 0
-	NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.45			   -- Base xp gain for traits per hour for armies 0.45
+	NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.30			   -- Base xp gain for traits per hour for armies 0.45
 	NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.0		   -- cost to assign a new trait to a unit leader, was 15
 	NDefines.NMilitary.MAX_NUM_TRAITS = 18						-- cant have more, -1 to disable (-1)
 	NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false   -- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
-	NDefines.NMilitaryUNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
-		2.0, -- field marshal
-		1.0, -- corps commander
-		2.0, -- navy general
+	NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
+		1.0, -- field marshal
+		0.0, -- corps commander
+		1.0, -- navy general
 		0.0, -- operative
 	}
-	NDefines.NMilitaryUNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
-		1, -- field marshal
-		1, -- corps commander
-		1, -- navy general
+	NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
+		0.5, -- field marshal
+		0.5, -- corps commander
+		0.5, -- navy general
 		0.0, -- operative
+	}
+
+	NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.25
+	
+	NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.90,
+		0.80,
+		0.70,
+		0.60,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00, --there isn't much point setting this higher than 0
+	}
+	NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.90,
+		0.80,
+		0.70,
+		0.60,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00,
 	}
 
 	-- FREE SCIENTIST
@@ -166,3 +197,4 @@
 	NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 	NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 	NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+

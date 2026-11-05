@@ -1,0 +1,314 @@
+characters = {
+	FRA_claude_francois = {
+		name = FRA_claude_francois
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_claude_francois_large
+				small = GFX_idea_FRA_claude_francois_small
+			}
+			army = {
+				large = GFX_portrait_FRA_claude_francois_large
+				small = GFX_idea_FRA_claude_francois_small
+			}
+		}
+		corps_commander={
+		
+			traits = {desert_fox guerilla_fighter}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_coeur_pirate = {
+		name = FRA_coeur_pirate
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_coeur_pirate_large
+				small = GFX_idea_FRA_coeur_pirate_small
+			}
+			army = {
+				large = GFX_portrait_FRA_coeur_pirate_large
+				small = GFX_idea_FRA_coeur_pirate_small
+			}
+		}
+		navy_leader={
+		
+			traits = {seawolf torpedo_expert}
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+    FRA_emmanuel_macron = {
+		name = FRA_emmanuel_macron
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_emmanuel_macron_large
+				small = GFX_idea_FRA_emmanuel_macron_small
+			}
+			army = {
+				large = GFX_portrait_FRA_emmanuel_macron_large
+				small = GFX_idea_FRA_emmanuel_macron_small
+			}
+		}
+		corps_commander={
+		
+			traits = {trait_cautious organizer}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_jacques_bellec = {
+		name = FRA_jacques_bellec
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_jacques_bellec_large
+				small = GFX_idea_FRA_jacques_bellec_small
+			}
+			army = {
+				large = GFX_portrait_FRA_jacques_bellec_large
+				small = GFX_idea_FRA_jacques_bellec_small
+			}
+		}
+		corps_commander={
+		
+			traits = {harsh_leader infantry_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_johnny_hallyday = {
+		name = FRA_johnny_hallyday
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_johnny_hallyday_large
+				small = GFX_idea_FRA_johnny_hallyday_small
+			}
+			army = {
+				large = GFX_portrait_FRA_johnny_hallyday_large
+				small = GFX_idea_FRA_johnny_hallyday_small
+			}
+		}
+		navy_leader={
+		
+			traits = {bold ironside big_guns_expert}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+    FRA_joueur_du_grenier = {
+		name = FRA_joueur_du_grenier
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_joueur_du_grenier_large
+				small = GFX_idea_FRA_joueur_du_grenier_small
+			}
+			army = {
+				large = GFX_portrait_FRA_joueur_du_grenier_large
+				small = GFX_idea_FRA_joueur_du_grenier_small
+			}
+		}
+		corps_commander={
+		
+			traits = { ranger trait_engineer}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_lilou_therval = {
+		name = FRA_lilou_therval
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_lilou_therval_large
+				small = GFX_idea_FRA_lilou_therval_small
+			}
+			army = {
+				large = GFX_portrait_FRA_lilou_therval_large
+				small = GFX_idea_FRA_lilou_therval_small
+			}
+		}
+		corps_commander={
+		
+			traits = {cavalry_leader expert_improviser}
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+    FRA_rivenzi_france = {
+		name = FRA_rivenzi_france
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_rivenzi_france_large
+				small = GFX_idea_FRA_rivenzi_france_small
+			}
+			army = {
+				large = GFX_portrait_FRA_rivenzi_france_large
+				small = GFX_idea_FRA_rivenzi_france_small
+			}
+		}
+		corps_commander={
+		
+			traits = {commando camouflage_expert}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_teo_legrand = {
+		name = FRA_teo_legrand
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_teo_legrand_large
+				small = GFX_idea_FRA_teo_legrand_small
+			}
+			army = {
+				large = GFX_portrait_FRA_teo_legrand_large
+				small = GFX_idea_FRA_teo_legrand_small
+			}
+		}
+		corps_commander={
+		
+			traits = {brilliant_strategist hill_fighter}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FRA_zita_hauteville = {
+		name = FRA_zita_hauteville
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_zita_hauteville_large
+				small = GFX_idea_FRA_zita_hauteville_small
+			}
+			army = {
+				large = GFX_portrait_FRA_zita_hauteville_large
+				small = GFX_idea_FRA_zita_hauteville_small
+			}
+		}
+		corps_commander={
+		
+			traits = {adaptable}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+     FRA_ousmane_dembele = {
+		name = FRA_ousmane_dembele
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_ousmane_dembele_large
+				small = GFX_idea_FRA_ousmane_dembele_small
+			}
+			army = {
+				large = GFX_portrait_FRA_ousmane_dembele_large
+				small = GFX_idea_FRA_ousmane_dembele_small
+			}
+		}
+		corps_commander={
+		
+			traits = {panzer_leader trait_reckless}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	FRA_jeanne_dorleans = {
+		name = FRA_jeanne_dorleans
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_jeanne_dorleans_large
+				small = GFX_idea_FRA_jeanne_dorleans_small
+			}
+			army = {
+				large = GFX_portrait_FRA_jeanne_dorleans_large
+				small = GFX_idea_FRA_jeanne_dorleans_small
+			}
+		}
+		corps_commander={
+		
+			traits = { brilliant_strategist infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	FRA_lucien_dalsace = {
+		name = FRA_lucien_dalsace
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_lucien_dalsace_large
+				small = GFX_idea_FRA_lucien_dalsace_small
+			}
+			army = {
+				large = GFX_portrait_FRA_lucien_dalsace_large
+				small = GFX_idea_FRA_lucien_dalsace_small
+			}
+		}
+		corps_commander={
+		
+			traits = { trait_mountaineer naval_invader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	}

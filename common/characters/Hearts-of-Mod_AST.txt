@@ -1,0 +1,194 @@
+characters = {
+	AST_joel_parkinson = {
+		name = AST_joel_parkinson
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_joel_parkinson_large
+				small = GFX_idea_AST_joel_parkinson_small
+			}
+			army = {
+				large = GFX_portrait_AST_joel_parkinson_large
+				small = GFX_idea_AST_joel_parkinson_small
+			}
+		}
+		navy_leader={
+		
+			traits = { screening_master lancer blockade_runner ironside}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+        }
+        AST_shanina_shaik = {
+		name = AST_shanina_shaik
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_shanina_shaik_large
+				small = GFX_idea_AST_shanina_shaik_small
+			}
+			army = {
+				large = GFX_portrait_AST_shanina_shaik_large
+				small = GFX_idea_AST_shanina_shaik_small
+			}
+		}
+		navy_leader={ 
+		
+			traits = { blue_water_expert }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+        }
+         AST_margot_robbie = {
+		name = AST_margot_robbie
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_margot_robbie_large
+				small = GFX_idea_AST_margot_robbie_small
+			}
+			army = {
+				large = GFX_portrait_AST_margot_robbie_large
+				small = GFX_idea_AST_margot_robbie_small
+			}
+		}
+		corps_commander={
+		
+			traits = {desert_fox brilliant_strategist}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+        }
+        AST_sydney_sarge = {
+		name = AST_sydney_sarge
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_sydney_sarge_large
+				small = GFX_idea_AST_sydney_sarge_small
+			}
+			army = {
+				large = GFX_portrait_AST_sydney_sarge_large
+				small = GFX_idea_AST_sydney_sarge_small
+			}
+		}
+		corps_commander={
+		
+			traits = {hill_fighter}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+        }
+        AST_sydney_sweeney = {
+		name = AST_sydney_sweeney
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_sydney_sweeney_large
+				small = GFX_idea_AST_sydney_sweeney_small
+			}
+			army = {
+				large = GFX_portrait_AST_sydney_sweeney_large
+				small = GFX_idea_AST_sydney_sweeney_small
+			}
+		}
+		corps_commander={
+		
+			traits = {media_personality guerilla_fighter}
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+        }
+        AST_joel_edgerton = {
+		name = AST_joel_edgerton
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_joel_edgerton_large
+				small = GFX_idea_AST_joel_edgerton_small
+			}
+			army = {
+				large = GFX_portrait_AST_joel_edgerton_large
+				small = GFX_idea_AST_joel_edgerton_small
+			}
+		}
+		corps_commander={
+		
+			traits = {adaptable}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+        }
+		AST_herr_magniez = {
+		name = AST_herr_magniez
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_herr_magniez_large
+				small = GFX_idea_AST_herr_magniez_small
+			}
+			army = {
+				large = GFX_portrait_AST_herr_magniez_large
+				small = GFX_idea_AST_herr_magniez_small
+			}
+		}
+		corps_commander={
+		
+			traits = {trait_engineer panzer_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+        }
+		AST_denis_brogniart = {
+		name = AST_denis_brogniart
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AST_denis_brogniart_large
+				small = GFX_idea_AST_denis_brogniart_small
+			}
+			army = {
+				large = GFX_portrait_AST_denis_brogniart_large
+				small = GFX_idea_AST_denis_brogniart_small
+			}
+		}
+		corps_commander={
+		
+			traits = {cavalry_leader trait_engineer}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+        }
+        }
