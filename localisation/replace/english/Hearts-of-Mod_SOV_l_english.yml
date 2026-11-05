@@ -1,0 +1,31 @@
+﻿l_english:
+    sov_cobra_ivanova: "Cobra Ivanova"
+    sov_kamila_zusje: "Kamila Zusje"
+    sov_liisa_sevrodonesk: "Liisa Sevrodonesk"
+    sov_naomia_brejnev: "Naomia Brejnev"
+    sov_natasha_poly: "Natasha Polyakova"
+    sov_sasha_luss: "Sasha Luss"
+    sov_sergei_cheffa: "Sergei Cheffa"
+    sov_tatiana_kurtukova: "Tatiana Kurtukova"
+    sov_vladimir_poutine: "Vladimir Poutine"
+    SOV_Mita: "Mita"
+    SOV_Katyusha: "Katyusha"
+    SOV_amelia_moskova: "Amélia Moskova"
+    SOV_anastasia_kirpichnikova: "Anastasia Kirpichnikova"
+    SOV_marko_ramius: "Marko Ramius"
+    SOV_nikita_khrouchtchev: "Nikita Khrouchtchev"
+    SOV_piotr_fiodorov: "Piotr Fiodorov"
+    SOV_roza_shanina: "Roza Shanina"
+    SOV_vasili_borodin: "Vasili Borodin"
+    SOV_viktor_reznov: "Viktor Reznov"
+    SOV_vitali_makarov: "Vitali Makarov"
+    SOV_yuliya_snigir: "Yuliya Snigir"
+    SOV_nikolai_malinkov: "Nikolai Malinkov"
+
+    # Fall of Moscow
+    Hearts-of-Mod_SOV_Chute_Moscou.1.title: "[this_character.GetName] appointed head of state"
+    Hearts-of-Mod_SOV_Chute_Moscou.1.desc: "$VICTORY_POINTS_6380$ has fallen. As the enemy advances and [this_country.GetNameDef] teeters on the brink of collapse, an unexpected figure has stepped forward to take the reins of the country. [this_character.GetName], previously unknown in the corridors of power [this_country.GetAdjective], has been proclaimed the new leader. In the streets, one question remains: can [this_character.GetSheHe] save [this_country.GetNameDef] from its downfall?"
+    Hearts-of-Mod_SOV_Chute_Moscou.1.a: "[this_character.GetSheHeCap] will lead the country until the end."
+
+    
+    
