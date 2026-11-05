@@ -1,0 +1,146 @@
+characters = {
+	FIN_howard_langston = {
+		name = FIN_howard_langston
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_howard_langston_large
+				small = GFX_idea_FIN_howard_langston_small
+			}
+			army = {
+				large = GFX_portrait_FIN_howard_langston_large
+				small = GFX_idea_FIN_howard_langston_small
+			}
+		}
+		corps_commander={
+		
+			traits = {urban_assault_specialist trait_reckless}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FIN_kimi_raikkonen = {
+		name = FIN_kimi_raikkonen
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_kimi_raikkonen_large
+				small = GFX_idea_FIN_kimi_raikkonen_small
+			}
+			army = {
+				large = GFX_portrait_FIN_kimi_raikkonen_large
+				small = GFX_idea_FIN_kimi_raikkonen_small
+			}
+		}
+		corps_commander={
+		
+			traits = {winter_specialist  winter_expert}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FIN_liisa_sevsonn = {
+		name = FIN_liisa_sevsonn
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_liisa_sevsonn_large
+				small = GFX_idea_FIN_liisa_sevsonn_small
+			}
+			army = {
+				large = GFX_portrait_FIN_liisa_sevsonn_large
+				small = GFX_idea_FIN_liisa_sevsonn_small
+			}
+		}
+		corps_commander={
+		
+			traits = {hill_fighter trait_engineer}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    FIN_lotta_hintsa = {
+		name = FIN_lotta_hintsa
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_lotta_hintsa_large
+				small = GFX_idea_FIN_lotta_hintsa_small
+			}
+			army = {
+				large = GFX_portrait_FIN_lotta_hintsa_large
+				small = GFX_idea_FIN_lotta_hintsa_small
+			}
+		}
+		navy_leader={
+		
+			traits = {arctic_water_expert cruiser_captain ironside}
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+    FIN_peter_franzen = {
+		name = FIN_peter_franzen
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_peter_franzen_large
+				small = GFX_idea_FIN_peter_franzen_small
+			}
+			army = {
+				large = GFX_portrait_FIN_peter_franzen_large
+				small = GFX_idea_FIN_peter_franzen_small
+			}
+		}
+		corps_commander={
+		
+			traits = {ranger adaptable}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+    FIN_saint_nicolas = {
+		name = FIN_saint_nicolas
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_saint_nicolas_large
+				small = GFX_idea_FIN_saint_nicolas_small
+			}
+			army = {
+				large = GFX_portrait_FIN_saint_nicolas_large
+				small = GFX_idea_FIN_saint_nicolas_small
+			}
+		}
+		corps_commander={
+		
+			traits = {brilliant_strategist harsh_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+    }

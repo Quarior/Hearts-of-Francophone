@@ -1,0 +1,170 @@
+characters = {
+	CAN_Ryan_Gosling = {
+		name = CAN_Ryan_Gosling
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_Ryan_Gosling_large
+				small = GFX_idea_CAN_Ryan_Gosling_small
+			}
+			army = {
+				large = GFX_portrait_CAN_Ryan_Gosling_large
+				small = GFX_idea_CAN_Ryan_Gosling_small
+			}
+		}
+		corps_commander={
+		
+			traits = {media_personality organizer}
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	CAN_ariane_lachance = {
+		name = CAN_ariane_lachance
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_ariane_lachance_large
+				small = GFX_idea_CAN_ariane_lachance_small
+			}
+			army = {
+				large = GFX_portrait_CAN_ariane_lachance_large
+				small = GFX_idea_CAN_ariane_lachance_small
+			}
+		}
+		corps_commander={
+		
+			traits = {brilliant_strategist hill_fighter}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	CAN_summer_mcintosh = {
+		name = CAN_summer_mcintosh
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_summer_mcintosh_large
+				small = GFX_idea_CAN_summer_mcintosh_small
+			}
+			army = {
+				large = GFX_portrait_CAN_summer_mcintosh_large
+				small = GFX_idea_CAN_summer_mcintosh_small
+			}
+		}
+		navy_leader={
+		
+			traits = {search_pattern_expert destroyer_leader loading_drill_master spotter}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	CAN_john_nolan = {
+		name = CAN_john_nolan
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_john_nolan_large
+				small = GFX_idea_CAN_john_nolan_small
+			}
+			army = {
+				large = GFX_portrait_CAN_john_nolan_large
+				small = GFX_idea_CAN_john_nolan_small
+			}
+		}
+		corps_commander={
+		
+			traits = {panzer_leader trait_cautious}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	CAN_justin_trudeau = {
+		name = CAN_justin_trudeau
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_justin_trudeau_large
+				small = GFX_idea_CAN_justin_trudeau_small
+			}
+			army = {
+				large = GFX_portrait_CAN_justin_trudeau_large
+				small = GFX_idea_CAN_justin_trudeau_small
+			}
+		}
+		corps_commander={
+		
+			traits = {naval_invader bearer_of_artillery}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	CAN_james_cameron = {
+		name = CAN_james_cameron
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_james_cameron_large
+				small = GFX_idea_CAN_james_cameron_small
+			}
+			army = {
+				large = GFX_portrait_CAN_james_cameron_large
+				small = GFX_idea_CAN_james_cameron_small
+			}
+		}
+		corps_commander={
+		
+			traits = {commando camouflage_expert}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	CAN_emily_vancamp = {
+		name = CAN_emily_vancamp
+		gender = male
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAN_emily_vancamp_large
+				small = GFX_idea_CAN_emily_vancamp_small
+			}
+			army = {
+				large = GFX_portrait_CAN_emily_vancamp_large
+				small = GFX_idea_CAN_emily_vancamp_small
+			}
+		}
+		corps_commander={
+		
+			traits = {brilliant_strategist trait_reckless}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	}

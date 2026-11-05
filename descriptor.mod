@@ -1,4 +1,4 @@
-version="1.19.*"
+version="0.6"
 picture="thumbnail.png"
 tags={
 	"Balance"
@@ -10,6 +10,5 @@ tags={
 	"Gameplay"
 	"Events"
 }
-name="Hearts of Mod - PreAlpha v0.5"
+name="Hearts of Francophone"
 supported_version="1.19.*"
-remote_file_id="3679790936"
