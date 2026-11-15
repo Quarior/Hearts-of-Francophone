@@ -72,9 +72,25 @@ hom_add_massmob_resources_effect = {
 # Naval specific
 hom_add_naval_resources_effect = {
 	capital_scope = {
-		add_resource = {
-			type = steel
-			amount = 25
+		if = {
+			limit = {
+				OWNER = {
+					has_resources_in_country = {
+						resource = steel
+						amount < 100
+					}
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 100
+			}
+		}
+		else = {
+			add_resource = {
+				type = steel
+				amount = 25
+			}
 		}
 		add_resource = {
 			type = chromium
