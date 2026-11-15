@@ -140,6 +140,10 @@ political_actions = {
 		
 		visible = {
 			tag = HUN
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		allowed = {
@@ -186,6 +190,10 @@ political_actions = {
 		
 		visible = {
 			tag = BUL
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		allowed = {
@@ -316,6 +324,10 @@ political_actions = {
 		
 		visible = {
 			tag = ITA
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		allowed = {
@@ -394,6 +406,10 @@ political_actions = {
 			SPR = { is_ai = yes }
 			is_ai = no
 			country_exists = SPR
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		complete_effect = {
 			ROOT = {
@@ -498,6 +514,10 @@ political_actions = {
 		visible = {
 			tag = GER
 			is_ai = no
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		allowed = {
 			original_tag = GER
@@ -539,6 +559,10 @@ political_actions = {
 		visible = {
 			tag = GER
 			is_ai = no
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		allowed = {
 			original_tag = GER

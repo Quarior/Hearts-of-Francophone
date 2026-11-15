@@ -45,6 +45,10 @@ hof_sov_category = {
 		}
 		activation = {
 			country_exists = EST
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		fire_only_once = yes
 		is_good = yes
@@ -83,6 +87,10 @@ hof_sov_category = {
 		}
 		activation = {
 			country_exists = LIT
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		fire_only_once = yes
 		is_good = yes
@@ -121,6 +129,10 @@ hof_sov_category = {
 		}
 		activation = {
 			country_exists = LAT
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		fire_only_once = yes
 		is_good = yes
@@ -172,6 +184,10 @@ hof_sov_category = {
 			original_tag = SOV
 		}
 		activation = {
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 			NOT = {
 				owns_state = 146
 				owns_state = 147
