@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Hearts-of-Mod_Le-gout-de-le-Defaite_radio_station_cover"
+		textureFile = "gfx/interface/topbar/musicplayer/Le-gout-de-le-Defaite_album_art.dds"
+		noOfFrames = 2
+	}
+}

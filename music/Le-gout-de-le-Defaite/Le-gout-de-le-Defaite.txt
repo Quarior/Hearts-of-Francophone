@@ -1,0 +1,39 @@
+music_station = "Hearts-of-Mod_Le-gout-de-le-Defaite_radio"
+
+music = {
+    song = "aurevoir"
+}
+music = {
+    song = "alone_again"
+}
+music = {
+    song = "de_funes"
+}
+music = {
+    song = "clone_theme"
+}
+music = {
+    song = "harry_styles"
+}
+music = {
+    song = "in_the_stars"
+}
+music = {
+    song = "manu"
+}
+music = {
+    song = "ridicule"
+}
+music = {
+    song = "the_fallen"
+}
+music = {
+    song = "titaflop"
+}
+music = {
+    song = "sad_piano"
+}
+music = {
+    song = "zombie"
+}
+

@@ -1,0 +1,46 @@
+music_station = "Hearts-of-Mod_NightClub_radio"
+
+music = {
+    song = "atc_world"
+}
+music = {
+    song = "avicii"
+}
+music = {
+    song = "break_free"
+}
+music = {
+    song = "gta_6"
+}
+music = {
+    song = "i_dont_know"
+}
+music = {
+    song = "macklemore"
+}
+music = {
+    song = "last_night"
+}
+music = {
+    song = "lil_tourner"
+}
+music = {
+    song = "right_about_now"
+}
+music = {
+    song = "peggy_gou"
+}
+music = {
+    song = "usher_dj_got"
+}
+music = {
+    song = "zombie_ops"
+}
+music = {
+    song = "sam_smith"
+}
+music = {
+    song = "rompe_cintura"
+}
+
+

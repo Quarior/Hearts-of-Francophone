@@ -1,0 +1,97 @@
+music = {
+    name = "american_conquest"
+    file = "american_conquest.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bad_bunny"
+    file = "bad_bunny.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Bailar-"
+    file = "Bailar-.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "baile_de_verao"
+    file = "baile_de_verao.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Gusttavo_Lima"
+    file = "Gusttavo_Lima.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Hechizeros_Band"
+    file = "Hechizeros_Band.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "la_cucaracha"
+    file = "la_cucaracha.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Medieval_II-"
+    file = "Medieval_II-.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "No_Anda_Sola"
+    file = "No_Anda_Sola.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Pasodoble_clasico"
+    file = "Pasodoble_clasico.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Resident_Evil_4"
+    file = "Resident_Evil_4.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "techno_mexicaine"
+    file = "techno_mexicaine.ogg"
+    volume = 0.55
+}
+
+music = {
+    name = "Undead_Nightmare"
+    file = "Undead_Nightmare.ogg"
+    volume = 0.65
+}
+music = {
+    name = "tropico"
+    file = "tropico.ogg"
+    volume = 0.65
+}
+music = {
+    name = "jamaica"
+    file = "jamaica.ogg"
+    volume = 0.65
+}
+music = {
+    name = "vegas_at_day"
+    file = "vegas_at_day.ogg"
+    volume = 0.65
+}
+music = {
+    name = "bailedeverao"
+    file = "bailedeverao.ogg"
+    volume = 0.65
+}

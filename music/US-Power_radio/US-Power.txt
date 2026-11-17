@@ -1,12 +1,222 @@
 music_station = "Hearts-of-Mod_US-Power_radio"
 
 music = {
-    song = "Johnny-Comes-Marching-Home"
+    song = "Pour-une-poignee-de-dollars"
     chance = {
         base = 0
         modifier = {
             add = 1
             has_war = no
+        }
+    }
+}
+music = {
+    song = "Pour-quelques-dollars-de-plus"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "my-way"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "le-jour-le-plus-long"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "california-dream"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "happy-nation"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "hotel-california"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "I-Was-Made-For-Lovin-You"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "kid-in-america"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "Somethin-Stupid"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "you-dont-love-me"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "you-never-can-tell"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "fortuna-song"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "freebird"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "Johnny-Comes-Marching-Home"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "macarena"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "need-heros"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "thunder-ACDC"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "Pentagon-theme"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "Opalite"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "chicago_theme"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "real_gone"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
         }
     }
 }

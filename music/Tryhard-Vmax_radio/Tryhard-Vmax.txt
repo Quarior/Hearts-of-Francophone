@@ -1,0 +1,50 @@
+music_station = "Hearts-of-Mod_Tryhard-Vmax_radio"
+
+music = {
+    song = "bassline_pumping"
+}
+
+music = {
+    song = "didnt_love_you"
+}
+
+music = {
+    song = "legends"
+}
+
+music = {
+    song = "no_probleme"
+}
+
+music = {
+    song = "Razor"
+}
+
+music = {
+    song = "reve_kids"
+}
+
+music = {
+    song = "symphony"
+}
+
+music = {
+    song = "tokyo_drift"
+}
+
+music = {
+    song = "ununpentio"
+}
+
+music = {
+    song = "where_are_you"
+}
+music = {
+    song = "got-it"
+}
+music = {
+    song = "therapy"
+}
+music = {
+    song = "sucker"
+}

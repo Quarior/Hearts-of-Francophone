@@ -1,0 +1,60 @@
+music = {
+    name = "aurevoir"
+    file = "aurevoir.ogg"
+    volume = 0.65
+}
+music = {
+    name = "alone_again"
+    file = "alone_again.ogg"
+    volume = 0.65
+}
+music = {
+    name = "de_funes"
+    file = "de_funes.ogg"
+    volume = 0.65
+}
+music = {
+    name = "clone_theme"
+    file = "clone_theme.ogg"
+    volume = 0.65
+}
+music = {
+    name = "harry_styles"
+    file = "harry_styles.ogg"
+    volume = 0.65
+}
+music = {
+    name = "in_the_stars"
+    file = "in_the_stars.ogg"
+    volume = 0.65
+}
+music = {
+    name = "manu"
+    file = "manu.ogg"
+    volume = 0.65
+}
+music = {
+    name = "ridicule"
+    file = "ridicule.ogg"
+    volume = 0.65
+}
+music = {
+    name = "the_fallen"
+    file = "the_fallen.ogg"
+    volume = 0.65
+}
+music = {
+    name = "titaflop"
+    file = "titaflop.ogg"
+    volume = 0.65
+}
+music = {
+    name = "sad_piano"
+    file = "sad_piano.ogg"
+    volume = 0.85
+}
+music = {
+    name = "zombie"
+    file = "zombie.ogg"
+    volume = 0.65
+}

@@ -1,5 +1,110 @@
 music = {
+    name = "Pour-une-poignee-de-dollars"
+    file = "Pour-une-poignee-de-dollars.ogg"
+    volume = 0.75
+}
+music = {
+    name = "Pour-quelques-dollars-de-plus"
+    file = "Pour-quelques-dollars-de-plus.ogg"
+    volume = 0.75
+}
+music = {
+    name = "my-way"
+    file = "my-way.ogg"
+    volume = 0.85
+}
+music = {
+    name = "le-jour-le-plus-long"
+    file = "le-jour-le-plus-long.ogg"
+    volume = 0.65
+}
+music = {
+    name = "california-dream"
+    file = "california-dream.ogg"
+    volume = 0.65
+}
+music = {
+    name = "happy-nation"
+    file = "happy-nation.ogg"
+    volume = 0.65
+}
+music = {
+    name = "hotel-california"
+    file = "hotel-california.ogg"
+    volume = 0.85
+}
+music = {
+    name = "I-Was-Made-For-Lovin-You"
+    file = "I-Was-Made-For-Lovin-You.ogg"
+    volume = 0.65
+}
+music = {
+    name = "kid-in-america"
+    file = "kid-in-america.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Somethin-Stupid"
+    file = "Somethin-Stupid.ogg"
+    volume = 0.85
+}
+music = {
+    name = "you-dont-love-me"
+    file = "you-dont-love-me.ogg"
+    volume = 0.95
+}
+music = {
+    name = "you-never-can-tell"
+    file = "you-never-can-tell.ogg"
+    volume = 0.65
+}
+music = {
+    name = "fortuna-song"
+    file = "fortuna-song.ogg"
+    volume = 0.65
+}
+music = {
+    name = "freebird"
+    file = "freebird.ogg"
+    volume = 0.45
+}
+music = {
     name = "Johnny-Comes-Marching-Home"
     file = "Johnny-Comes-Marching-Home.ogg"
+    volume = 0.95
+}
+music = {
+    name = "macarena"
+    file = "macarena.ogg"
+    volume = 0.65
+}
+music = {
+    name = "need-heros"
+    file = "need-heros.ogg"
+    volume = 0.65
+}
+music = {
+    name = "thunder-ACDC"
+    file = "thunder-ACDC.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Pentagon-theme"
+    file = "Pentagon-theme.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Opalite"
+    file = "Opalite.ogg"
+    volume = 0.65
+}
+music = {
+    name = "chicago_theme"
+    file = "chicago_theme.ogg"
+    volume = 0.65
+}
+music = {
+    name = "real_gone"
+    file = "real_gone.ogg"
     volume = 0.65
 }

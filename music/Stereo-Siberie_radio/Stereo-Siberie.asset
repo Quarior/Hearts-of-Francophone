@@ -1,0 +1,75 @@
+music = {
+    name = "Stalingrad_sniper"
+    file = "Stalingrad_sniper.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Serge_Prokofieff"
+    file = "Serge_Prokofieff.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Tchaikovsky_Op_66a"
+    file = "Tchaikovsky_Op_66a.ogg"
+    volume = 0.65
+}
+music = {
+    name = "gta4"
+    file = "gta4.ogg"
+    volume = 0.55
+}
+music = {
+    name = "poluskapoy"
+    file = "poluskapoy.ogg"
+    volume = 0.95
+}
+music = {
+    name = "moska_soviet_theme"
+    file = "moska_soviet_theme.ogg"
+    volume = 0.55
+}
+music = {
+    name = "name_of_tsar"
+    file = "name_of_tsar.ogg"
+    volume = 0.65
+}
+music = {
+    name = "Octobre_rouge"
+    file = "Octobre_rouge.ogg"
+    volume = 0.65
+}
+music = {
+    name = "stalingad_bataille"
+    file = "stalingad_bataille.ogg"
+    volume = 0.65
+}
+music = {
+    name = "song_GUP"
+    file = "song_GUP.ogg"
+    volume = 0.65
+}
+music = {
+    name = "rise_of_the_red"
+    file = "rise_of_the_red.ogg"
+    volume = 0.65
+}
+music = {
+    name = "regiment_parachute"
+    file = "regiment_parachute.ogg"
+    volume = 0.75
+}
+music = {
+    name = "katuysha"
+    file = "katuysha.ogg"
+    volume = 0.65
+}
+music = {
+    name = "arstotzka"
+    file = "arstotzka.ogg"
+    volume = 0.65
+}
+music = {
+    name = "putin_walk"
+    file = "putin_walk.ogg"
+    volume = 0.65
+}

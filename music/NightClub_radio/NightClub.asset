@@ -1,0 +1,75 @@
+music = {
+    name = "atc_world"
+    file = "atc_world.ogg"
+    volume = 0.65
+}
+music = {
+    name = "avicii"
+    file = "avicii.ogg"
+    volume = 0.65
+}
+music = {
+    name = "break_free"
+    file = "break_free.ogg"
+    volume = 0.65
+}
+music = {
+    name = "gta_6"
+    file = "gta_6.ogg"
+    volume = 0.65
+}
+music = {
+    name = "i_dont_know"
+    file = "i_dont_know.ogg"
+    volume = 0.65
+}
+music = {
+    name = "macklemore"
+    file = "macklemore.ogg"
+    volume = 0.65
+}
+music = {
+    name = "maroon5"
+    file = "maroon5.ogg"
+    volume = 0.65
+}
+music = {
+    name = "last_night"
+    file = "last_night.ogg"
+    volume = 0.65
+}
+music = {
+    name = "lil_tourner"
+    file = "lil_tourner.ogg"
+    volume = 0.65
+}
+music = {
+    name = "right_about_now"
+    file = "right_about_now.ogg"
+    volume = 0.65
+}
+music = {
+    name = "peggy_gou"
+    file = "peggy_gou.ogg"
+    volume = 0.65
+}
+music = {
+    name = "usher_dj_got"
+    file = "usher_dj_got.ogg"
+    volume = 0.75
+}
+music = {
+    name = "zombie_ops"
+    file = "zombie_ops.ogg"
+    volume = 0.65
+}
+music = {
+    name = "sam_smith"
+    file = "sam_smith.ogg"
+    volume = 0.65
+}
+music = {
+    name = "rompe_cintura"
+    file = "rompe_cintura.ogg"
+    volume = 0.65
+}

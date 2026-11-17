@@ -1,0 +1,152 @@
+music_station = "Hearts-of-Mod_Stereo-Siberie_radio"
+
+music = {
+    song = "Stalingrad_sniper"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "Serge_Prokofieff"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "Tchaikovsky_Op_66a"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "gta4"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "poluskapoy"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "moska_soviet_theme"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "name_of_tsar"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}
+music = {
+    song = "Octobre_rouge"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "stalingad_bataille"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "song_GUP"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "rise_of_the_red"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "regiment_parachute"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "katuysha"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "arstotzka"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+    }
+}
+music = {
+    song = "putin_walk"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+    }
+}

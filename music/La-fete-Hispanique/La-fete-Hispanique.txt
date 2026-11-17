@@ -1,0 +1,177 @@
+music_station = "Hearts-of-Mod_La-fete-Hispanique_radio"
+
+music = {
+    song = "american_conquest"
+    chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "bad_bunny"
+}
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+
+music = {
+    song = "Bailar-"
+}
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+
+music = {
+    song = "baile_de_verao"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "Gusttavo_Lima"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+
+music = {
+    song = "Hechizeros_Band"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+
+music = {
+    song = "la_cucaracha"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "Medieval_II-"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+
+music = {
+    song = "No_Anda_Sola"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "Pasodoble_clasico"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "Resident_Evil_4"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+
+music = {
+    song = "techno_mexicaine"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+
+music = {
+    song = "Undead_Nightmare"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+music = {
+    song = "tropico"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+music = {
+    song = "jamaica"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = no
+        }
+        }
+}
+music = {
+    song = "vegas_at_day"
+     chance = {
+        base = 0
+        modifier = {
+            add = 1
+            has_war = yes
+        }
+        }
+}
+music = {
+    song = "bailedeverao"
+}
