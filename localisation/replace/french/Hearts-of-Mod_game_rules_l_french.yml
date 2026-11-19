@@ -10,10 +10,16 @@
     RULE_OPTION_HEARTS_OF_MOD_FALL_OF_MOSCOW_DISABLED_DESC:0 "L'événement de la chute de Moscou ne se produira jamais."
 
 
-    RULE_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER:0 "§Yapitulation conditionnelle§!"
+    RULE_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER:0 "§YCapitulation conditionnelle§!"
 
     RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_ENABLED_DESC:0 "Permet d'activer une action diplomatique permettant à un pays de se rendre. Cette action est également disponible pour l'IA."
     RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_DISABLED_DESC:0 "Désactive l'action diplomatique permettant à un pays de se rendre."
+    
+    # Auto decisions bonus
+    RULE_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS:0 "Décisions d'annexion automatique"
+    
+    RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_ENABLED_DESC:0 "Active les décisions qui permettent d'annexer automatiquement des territoires."
+    RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_DISABLED_DESC:0 "Désactive les décisions d'annexion automatique de territoires."
 
     # DIFFICULTES PERSONNALISES
     # Options de base
@@ -46,3 +52,10 @@
     RULE_HOM_ITA_BONUS_AI:0 "@ITA Italie - Bonus & IA"
     RULE_HOM_JAP_BONUS_AI:0 "@JAP Japon - Bonus & IA"
     RULE_HOM_USA_BONUS_AI:0 "@USA USA - Bonus & IA"
+    RULE_HOM_CAN_BONUS_AI:0 "@CAN Canada - Bonus & IA"
+    RULE_HOM_AST_BONUS_AI:0 "@AST Australie - Bonus & IA"
+    RULE_HOM_ROM_BONUS_AI:0 "@ROM Roumanie - Bonus & IA"
+    RULE_HOM_BUL_BONUS_AI:0 "@BUL Bulgarie - Bonus & IA"
+    RULE_HOM_RAJ_BONUS_AI:0 "@RAJ Raj britannique - Bonus & IA"
+
+    

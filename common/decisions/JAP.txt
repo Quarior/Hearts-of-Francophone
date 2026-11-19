@@ -5659,6 +5659,10 @@ JAP_kwantung_army_decisions = {
 		
 		activation = {
 			country_exists = SIA
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		available = {
@@ -5711,6 +5715,10 @@ JAP_kwantung_army_decisions = {
 		
 		activation = {
 			country_exists = MAN
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		available = {
@@ -5877,6 +5885,10 @@ JAP_kwantung_army_decisions = {
 		
 		activation = {
 			country_exists = MAN
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		available = {
@@ -5934,6 +5946,10 @@ JAP_kwantung_army_decisions = {
 		
 		activation = {
 			country_exists = MAN
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = ENABLED
+			}
 		}
 		
 		available = {
@@ -5995,7 +6011,10 @@ JAP_kwantung_army_decisions = {
 		fire_only_once = yes
 		
 		activation = {
-			always = no
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = DISABLED
+			}
 		}
 		
 		visible = {
@@ -6085,7 +6104,10 @@ JAP_kwantung_army_decisions = {
 		fire_only_once = yes
 		
 		activation = {
-			always = no
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = DISABLED
+			}
 		}
 		
 		visible = {
@@ -6127,7 +6149,10 @@ JAP_kwantung_army_decisions = {
 		icon = GFX_decision_jap_conquer_china #GFX_decision_generic_ignite_civil_war
 		
 		available = {
-			hidden_trigger = { always = no }
+			has_game_rule = {
+				rule = hearts_of_mod_auto_decisions_bonus
+				option = DISABLED
+			}
 		}
 		
 		days_mission_timeout = 365
