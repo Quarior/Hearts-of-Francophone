@@ -1,0 +1,108 @@
+# Scripted cost modifiers for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_action_modifiers = {
+	true_conditional_surrender_not_controlled_states_not_fully_controlled = {
+		category = belonged_to_someone_else
+		peace_action_type = { take_states puppet force_government liberate }
+		enable = {
+			any_country = {
+				has_country_flag = true_peace_proposal_host
+				OR = {
+					tag = ROOT
+					has_subject = ROOT
+					AND = {
+						is_faction_leader = yes
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			FROM.FROM.FROM = {
+				NOT = {
+					is_fully_controlled_by = CONTROLLER
+				}
+				CONTROLLER = {
+					is_true_peace_proposal_host_or_allies = no
+				}
+			}
+		}
+		cost_multiplier = 250
+	}
+
+	true_conditional_surrender_not_controlled_states_fully_controlled = {
+		category = belonged_to_someone_else
+		peace_action_type = { take_states puppet force_government liberate }
+		enable = {
+			any_country = {
+				has_country_flag = true_peace_proposal_host
+				OR = {
+					tag = ROOT
+					has_subject = ROOT
+					AND = {
+						is_faction_leader = yes
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			FROM.FROM.FROM = {
+				is_fully_controlled_by = CONTROLLER
+				CONTROLLER = {
+					is_true_peace_proposal_host_or_allies = no
+				}
+			}
+		}
+		cost_multiplier = 500
+	}
+
+	true_conditional_surrender_controlled_states_not_fully_controlled = {
+		category = occupation
+		peace_action_type = { take_states puppet force_government liberate }
+		enable = {
+			any_country = {
+				has_country_flag = true_peace_proposal_host
+				OR = {
+					tag = ROOT
+					has_subject = ROOT
+					AND = {
+						is_faction_leader = yes
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			FROM.FROM.FROM = {
+				NOT = {
+					is_fully_controlled_by = CONTROLLER
+				}
+				CONTROLLER = {
+					tag = ROOT
+				}
+			}
+		}
+		cost_multiplier = 0.75
+	}
+
+	true_conditional_surrender_controlled_states_fully_controlled = {
+		category = occupation
+		peace_action_type = { take_states puppet force_government liberate }
+		enable = {
+			any_country = {
+				has_country_flag = true_peace_proposal_host
+				OR = {
+					tag = ROOT
+					has_subject = ROOT
+					AND = {
+						is_faction_leader = yes
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			FROM.FROM.FROM = {
+				is_fully_controlled_by = CONTROLLER
+				CONTROLLER = {
+					tag = ROOT
+				}
+			}
+		}
+		cost_multiplier = 0.5
+	}
+}

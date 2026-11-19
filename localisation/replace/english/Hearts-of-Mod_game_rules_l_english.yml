@@ -9,6 +9,12 @@
     RULE_OPTION_HEARTS_OF_MOD_FALL_OF_MOSCOW_ENABLED_DESC:0 "The Fall of Moscow event can occur."
     RULE_OPTION_HEARTS_OF_MOD_FALL_OF_MOSCOW_DISABLED_DESC:0 "The Fall of Moscow event will never occur."
 
+
+    RULE_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER:0 "§YConditional Surrender§!"
+    
+    RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_ENABLED_DESC:0 "Enables a diplomatic action allowing a country to surrender. This action is also available to the AI."
+    RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_DISABLED_DESC:0 "Disables the diplomatic action allowing a country to surrender."
+
     # CUSTOM DIFFICULTIES
     # Base Options
     RULE_OPTION_HOM_RANDOM_ENABLED:0 "Random (enabled)"

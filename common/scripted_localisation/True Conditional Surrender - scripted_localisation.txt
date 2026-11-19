@@ -1,0 +1,119 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = {
+	name = GetTruePeaceProposalRootEffect
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_subject = yes
+					AND = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+				}
+			}
+		}
+		localization_key = "[ROOT.GetNameWithFlag]: [GetTruePeaceProposalRootEffectSubject] [GetTruePeaceProposalRootEffectFaction]"
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetTruePeaceProposalRootEffectSubject
+	text = {
+		trigger = {
+			ROOT = {
+				is_subject = yes
+			}
+		}
+		localization_key = DIPLOMACY_TRUE_PEACE_PROPOSAL_ROOT_EFFECT_INDEPENDENT
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetTruePeaceProposalRootEffectFaction
+	text = {
+		trigger = {
+			ROOT = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+		}
+		localization_key = DIPLOMACY_TRUE_PEACE_PROPOSAL_ROOT_EFFECT_LEFT_FACTION
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetTrueConditionalSurrenderPeacePopupLoserEffect
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					var = loser_was_subject
+					value = 1
+					compare = equals
+				}
+				check_variable = {
+					var = loser_was_in_faction
+					value = 1
+					compare = equals
+				}
+			}
+		}
+		localization_key = "[?loser_country.GetNameWithFlag]: [GetTrueConditionalSurrenderPeacePopupLoserEffectSubject] [GetTrueConditionalSurrenderPeacePopupLoserEffectFaction]"
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetTrueConditionalSurrenderPeacePopupLoserEffectSubject
+	text = {
+		trigger = {
+			check_variable = {
+				var = loser_was_subject
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_INDEPENDENT
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetTrueConditionalSurrenderPeacePopupLoserEffectFaction
+	text = {
+		trigger = {
+			check_variable = {
+				var = loser_was_in_faction
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_LEFT_FACTION
+	}
+	text = {
+		localization_key = ""
+	}
+}

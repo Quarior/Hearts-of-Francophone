@@ -1,0 +1,86 @@
+DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_ROOT_calc = {
+	set_temp_variable = {
+		this_country = THIS
+	}
+	set_temp_variable = {
+		score_factor_var = 0
+	}
+	set_temp_variable = {
+		score_factor_var_max = 0
+	}
+	every_country = {
+		limit = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				AND = {
+					ROOT = {
+						is_faction_leader = yes
+					}
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		every_owned_state = {
+			limit = {
+				CONTROLLER = {
+					OR = {
+						tag = var:this_country
+						is_subject_of = var:this_country
+						AND = {
+							var:this_country = {
+								is_faction_leader = yes
+							}
+							is_in_faction_with = var:this_country
+						}
+					}
+				}
+			}
+			add_to_temp_variable = {
+				score_factor_var = 1
+			}
+		}
+		add_to_temp_variable = {
+			score_factor_var_max = THIS.num_owned_states
+		}
+	}
+	divide_temp_variable = {
+		score_factor_var = score_factor_var_max
+	}
+	var:this_country = {
+		set_variable = {
+			DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT = score_factor_var
+		}
+	}
+}
+
+TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_effect = {
+	add_to_variable = {
+		global.True_Conditional_Surrender_num_conditional_surrender = 1
+	}
+	every_country = {
+		set_variable = {
+			loser_country = loser_country_temp
+		}
+		set_variable = {
+			loser_capital = loser_capital_temp
+		}
+		set_variable = {
+			loser_was_subject = loser_was_subject_temp
+		}
+		set_variable = {
+			loser_old_overlord = loser_old_overlord_temp
+		}
+		set_variable = {
+			loser_was_in_faction = loser_was_in_faction_temp
+		}
+		set_variable = {
+			winner_country = winner_country_temp
+		}
+		set_country_flag = {
+			flag = show_True_Conditional_Surrender_peace_gui
+			value = 1
+			days = 15
+		}
+	}
+}

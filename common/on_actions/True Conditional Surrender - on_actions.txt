@@ -1,0 +1,129 @@
+on_actions = {
+	on_war_relation_added = {
+		effect = {
+			ROOT = {
+				set_variable = {
+					war_length_with_@FROM = 0
+				}
+				set_variable = {
+					DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@FROM = 0
+				}
+			}
+			FROM = {
+				set_variable = {
+					war_length_with_@ROOT = 0
+				}
+				set_variable = {
+					DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT = 0
+				}
+			}
+		}
+	}
+	
+	on_weekly = {
+		effect = {
+			every_other_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_ROOT_calc = yes
+			}
+		}
+		effect = {
+			every_state = {
+				limit = {
+					has_state_flag = {
+						flag = true_peace_proposal_demilitarized_zone
+						value = 1
+						days > 7
+					}
+					is_demilitarized_zone = no
+				}
+				clr_state_flag = true_peace_proposal_demilitarized_zone
+			}
+		}
+		effect = {
+			every_state = {
+				limit = {
+					has_state_flag = {
+						flag = true_peace_proposal_demilitarized_zone
+						value = 1
+						days > 1825
+					}
+				}
+				clr_state_flag = true_peace_proposal_demilitarized_zone
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	
+	on_monthly = {
+		effect = {
+			every_other_country = {
+				limit = {
+					has_war_with = ROOT
+				}
+				ROOT = {
+					add_to_variable = {
+						war_length_with_@PREV = 1
+					}
+				}
+			}
+		}
+	}
+	
+	on_before_peace_conference_start = {
+		effect = {
+			ROOT = {
+				clear_variable = war_length_with_@FROM
+				clear_variable = DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@FROM
+			}
+			FROM = {
+				clear_variable = war_length_with_@ROOT
+				clear_variable = DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT
+			}
+		}
+	}
+	
+	on_peaceconference_started = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = true_peace_proposal_host
+					}
+					FROM = {
+						has_country_flag = true_peace_proposal_loser
+					}
+				}
+				every_state = {
+					limit = {
+						has_state_flag = true_peace_proposal_demilitarized_zone
+					}
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+	
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = true_peace_proposal_host
+					}
+					FROM = {
+						has_country_flag = true_peace_proposal_loser
+					}
+				}
+				ROOT = {
+					clr_country_flag = true_peace_proposal_host
+				}
+				FROM = {
+					clr_country_flag = true_peace_proposal_loser
+				}
+			}
+		}
+	}
+}

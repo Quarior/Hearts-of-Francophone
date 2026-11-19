@@ -1,0 +1,34 @@
+# From TNO
+scripted_gui = {
+    True_Conditional_Surrender_peace_notification = {
+        
+        window_name = "True_Conditional_Surrender_peace_notification_window" 
+        context_type = player_context
+        dirty = global.True_Conditional_Surrender_num_conditional_surrender
+
+        properties = {
+			flag_1 = {
+				image = "[?winner_country.GetFlag]"
+			}
+			flag_2 = {
+				image = "[?loser_country.GetFlag]"
+			}
+		}
+        
+        visible = {
+            has_country_flag = show_True_Conditional_Surrender_peace_gui
+        }
+        
+        effects = {
+            close_button_click = {
+                clr_country_flag = show_True_Conditional_Surrender_peace_gui
+                clear_variable = winner_country
+				clear_variable = loser_country
+                clear_variable = loser_capital
+                clear_variable = loser_was_subject
+                clear_variable = loser_old_overlord
+                clear_variable = loser_was_in_faction
+            }
+        }
+    }
+}

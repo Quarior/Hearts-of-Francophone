@@ -1,0 +1,1246 @@
+
+#scripted_diplomatic_actions = {
+#
+#	action_key = { # will be used in most localizations
+#	
+#		# root is the initiator of action and this is the target country
+#		allowed = { #if action is valid
+#			always = yes
+#		}
+#		visible = { #if action is visible on gui
+#			always = yes
+#		}
+#		selectable = { #if action is selectable on gui
+#			always = yes
+#		}
+#
+#		requires_acceptance = yes # if true the action will require acceptance of target country
+#		cost = 10 # pp cost, can be zero
+#		command_power = 10 # cp cost, can be zero
+#
+#		cost_string = loc_key # if you have a custom cost, use this loc to display it
+#		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
+#
+#		icon = 1 # icon frame to use in notification
+#
+#       #for effects/triggers/variables, root is the sender and this is receiver
+#
+#		# runs when the action is sent
+#		on_sent_effect = {
+#		}
+#
+#		# runs when the action is properly sent and accepted
+#		complete_effect = {
+#		}
+#
+#		# runs when the action is properly sent and rejected
+#		reject_effect = {
+#		}
+#
+#		# SEND POPUP CUSTOMIZATION
+#		# use diplomatic_action as context in scripted gui
+#		# send_scripted_gui = send_scripted_gui_name # if specified, the diplomatic action will use this scripted gui before sending the request. the player (or ai) can make changes on that gui and store stuff as variable to customize action
+#		reset_send_effect = { # if action has a send scripted gui, this effect will be used for clearing the state of gui (will run when player opens the scripted gui by sending the action or when ai proposes action
+#			# clear action
+#			if = {
+#				limit = { 
+#					root = {
+#						is_ai = yes
+#					}
+#				}
+#				# initialize for ai
+#			}
+#		}
+#		can_be_sent = { # send button will be disabled if no
+#			always = yes
+#		}
+#		send_description = loc_key_send # if there is no scripted gui, this desc will be used in send yes/no pop up
+#
+#
+#		# RECEIVE POPUP CUSTOMIZATION
+#		# use diplomatic_action as context in scripted gui
+#		# receive_scripted_gui = receive_scripted_gui_name #if specified the receiver of the action will get this scripted gui instead of yes-no popup when they receive the propose
+#		reset_receive_effect = {
+#			# clear action
+#			if = {
+#				limit = { 
+#					is_ai = yes
+#				}
+#				# change stuff for ai
+#			}
+#		}
+#		can_be_accepted = { # accept button will be disabled if no
+#			always = yes
+#		}
+#		receive_description = loc_key_receive # if there is no scripted gui, this desc will be used in send yes/no pop up
+#
+#		
+#		# PLAYER FEEDBACK ON ACCEPT/REJECT
+#		accept_title = loc_key_accept #can be overridden to customize accepted/rejected pop ups for the sender
+#		accept_description = loc_key_accept_desc
+#		reject_title = loc_key_reject
+#		reject_description = loc_key_reject_desc
+#	
+#		
+#		# AI
+#		# a list of ai_will_do entries that will be used to decide if AI should accept or reject a request
+#		ai_acceptance = {
+#			condition = { # name is used for loc
+#				base = 100
+#			}
+#		}
+#
+#		# ai_will_do to decide if AI should send this action or not
+#		ai_desire = {
+#			base = -1
+#			modifier = {
+#				ROOT = {
+#					tag = ENG
+#				}
+#				tag = GER
+#				add = 1000
+#			}
+#		}
+#	}
+#}
+
+
+scripted_diplomatic_actions = {
+	#####################################################################################################################
+	# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+	# > REMEMBER < the default scope in this file is the TARGET COUNTRY! NOT THE COUNTRY SENDING THE DIPLOMATIC REQUEST #
+	#####################################################################################################################
+	
+	DIPLOMACY_TRUE_PEACE_PROPOSAL = {
+		icon = 1		#	The icon to use for the dipomatic request, visible when the diplomatic action is sent, not visible if the diplomatic request does not require acceptance, must be included in the \gfx\interface\alerts\global_diplorequest_icons.dds file, number represents icon location from left to right.
+		
+		#### CONDITIONS TO USE/SEE ACTION ###
+		
+		#	Used for the send window, if not true player/AI wont be able to send the diplomatic request even if can_be_sent is true.
+		allowed = {
+			has_game_rule = {
+				rule = hearts_of_mod_enable_true_conditionnal_surrender
+				option = ENABLED
+			}
+		}
+		#	Conditions to make this diplomatic action appear in the diplomacy screen.
+		visible = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+		#	Conditions to allow player/AI to click the option in the diplomacy screen, this is what the player sees as "prerequisets" to use this action.
+		selectable = {
+			ROOT = {
+				is_puppet = no
+			}
+			FROM = {
+				war_length_with = {
+					tag = ROOT
+					months > 3
+				}
+			}
+			FROM = {
+				is_subject = no
+				OR = {
+					is_faction_leader = yes
+					is_in_faction = no
+					is_major = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = is_losing_or_no_winner_tt
+				is_losing_or_no_winner = yes
+			}
+		}
+		# Conditions that may not allow player/AI to accept this diplomatic action.
+		can_be_accepted = {
+		}
+		# Conditions that may not allow player/AI to send this diplomatic action.
+		can_be_sent = {
+			# FROM = {
+			# 	has_true_conditional_surrender_proposal = no
+			# }
+		}
+		
+		cost = 0		# The cost to execute this diplomatic action, by default is political power
+		
+		requires_acceptance = yes		#	Does this diplomatic request requires acceptance, if set to NO reject_effect is invalid
+		show_acceptance_on_action_button = yes #	Should accept/decline tooltip be shown in the user interface when using this diplomatic action on AI countries		
+		
+		#### ACTION LOCALISATION ###
+		
+		send_description = DIPLOMACY_TRUE_PEACE_PROPOSAL_SEND_DESC		# The text the country that is executing the diplomatic action sees.
+		receive_description = DIPLOMACY_TRUE_PEACE_PROPOSAL_RECEIVE_DESC	# The text the target country sees when recieving the diplomation action.
+		accept_title = DIPLOMACY_MESSAGE_ACCEPTED_TITLE_DIPLOMACY_PEACE_PROPOSAL		# The notification title shown when the diplomatic action is ACCEPTED, not valid if requires_acceptance is set to NO
+		accept_description = DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_TRUE_PEACE_PROPOSAL	# The notification description shown when the diplomatic action is ACCEPTED, not valid if requires_acceptance is set to NO
+		reject_title = DIPLOMACY_MESSAGE_DECLINED_TITLE_DIPLOMACY_PEACE_PROPOSAL				# The notification title shown when the diplomatic action is REJECTED, not valid if requires_acceptance is set to NO
+		reject_description = DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_TRUE_PEACE_PROPOSAL           # The notification description shown when the diplomatic action is REJECTED, not valid if requires_acceptance is set to NO
+		
+		#### EFFECTS ###		
+		
+		#	An effect that can be applied when sending the diplomatic action.
+		on_sent_effect = {
+			hidden_effect = {
+				FROM = {
+					set_country_flag = {
+						flag = true_conditional_surrender_proposal
+						value = 1
+						days = 30
+					}
+					ROOT = {
+						set_country_flag = {
+							flag = DIPLOMACY_TRUE_PEACE_PROPOSAL_cooldown_@PREV
+							value = 1
+							days = 30
+						}
+					}
+				}
+			}
+		}
+		#	An effect that can be applied the action is ACCEPTED (accepted always if requires_acceptance is set to NO)
+		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_war_with = ROOT
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+							AND = {
+								FROM = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = FROM
+							}
+						}
+					}
+					set_temp_variable = {
+						country_A = THIS
+					}
+					every_other_country = {
+						limit = {
+							has_war_with = FROM
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								AND = {
+									ROOT = {
+										is_faction_leader = yes
+									}
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+						set_temp_variable = {
+							country_B = THIS
+						}
+						remove_civil_war_target = var:country_A
+						var:country_A = {
+							remove_civil_war_target = var:country_B
+						}
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = CONTROLLER
+					OWNER = {
+						has_war_with = ROOT
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+							AND = {
+								FROM = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = FROM
+							}
+						}
+					}
+					CONTROLLER = {
+						has_war_with = FROM
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+							AND = {
+								ROOT = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				transfer_state_to = CONTROLLER
+				set_compliance = 50
+			}
+			every_state = {
+				limit = {
+					NOT = {
+						is_fully_controlled_by = CONTROLLER
+					}
+					OWNER = {
+						has_war_with = ROOT
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+							AND = {
+								FROM = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = FROM
+							}
+						}
+					}
+					CONTROLLER = {
+						has_war_with = FROM
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+							AND = {
+								ROOT = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				set_state_flag = true_peace_proposal_demilitarized_zone
+			}
+			hidden_effect = {
+				ROOT = {
+					set_country_flag = true_peace_proposal_loser
+					set_temp_variable = {
+						loser_country_temp = THIS
+					}
+					set_temp_variable = {
+						loser_capital_temp = THIS.capital
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_subject = yes
+					}
+				}
+				set_temp_variable = {
+					loser_was_subject_temp = 1
+				}
+				ROOT = {
+					random_other_country = {
+						limit = {
+							has_subject = PREV
+						}
+						set_temp_variable = {
+							loser_old_overlord_temp = THIS
+						}
+						set_autonomy = {
+							target = PREV
+							autonomous_state = autonomy_free
+							end_wars = no
+							end_civil_wars = no
+						}
+						PREV = {
+							abandon_colony_tag = yes
+						}
+						create_wargoal = {
+							target = PREV
+							type = puppet_wargoal_focus
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_temp_variable = {
+						loser_was_subject_temp = 0
+					}
+					set_temp_variable = {
+						loser_old_overlord_temp = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = yes
+						is_faction_leader = no
+					}
+				}
+				set_temp_variable = {
+					loser_was_in_faction_temp = 1
+				}
+				ROOT = {
+					leave_faction = yes
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_temp_variable = {
+						loser_was_in_faction_temp = 0
+					}
+				}
+			}
+			FROM = {
+				set_country_flag = true_peace_proposal_host
+				set_temp_variable = {
+					winner_country_temp = THIS
+				}
+				start_peace_conference = {
+					tag = ROOT
+					score_factor = var:DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT
+					winner_scope = LIMITED_FACTION
+					loser_scope = LIMITED_FACTION
+				}
+			}
+			hidden_effect = {
+				FROM = {
+					clr_country_flag = true_conditional_surrender_proposal
+				}
+			}
+			hidden_effect = {
+				log = "True Conditional Surrender - A conditional surrender agreement has been signed between [?loser_country_temp.GetTag] [?loser_country_temp.GetNameDef] and [?winner_country_temp.GetTag] [?winner_country_temp.GetNameDef]."
+				TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_effect = yes
+			}
+		}
+		#	An effect that can be applied the action is REJECTED (only valid if requires_acceptance is set to YES )
+		reject_effect = {
+			hidden_effect = {
+				FROM = {
+					clr_country_flag = true_conditional_surrender_proposal
+				}
+			}
+		}
+		
+		#### AI SECTION ###
+		
+		# AI modifiers to use this diplomatic action
+		ai_desire = {
+			base = -100
+			modifier = {
+				add = var:world_threat
+				set_temp_variable = {
+					world_threat = global.threat
+				}
+				multiply_temp_variable = {
+					world_threat = -1
+				}
+				multiply_temp_variable = {
+					world_threat = 10
+				}
+			}
+			modifier = {
+				add = var:s
+				ROOT = {
+					set_temp_variable = {
+						ws = THIS.has_stability
+					}
+				}
+				subtract_from_temp_variable  = {
+					s = 0.5
+				}
+				multiply_temp_variable = {
+					s = 10
+				}
+				multiply_temp_variable = {
+					s = -1
+				}
+			}
+			modifier = {
+				add = var:ws
+				ROOT = {
+					set_temp_variable = {
+						ws = THIS.has_war_support
+					}
+				}
+				subtract_from_temp_variable  = {
+					ws = 0.5
+				}
+				multiply_temp_variable = {
+					ws = 10
+				}
+				multiply_temp_variable = {
+					ws = -1
+				}
+			}
+			modifier = {
+				add = var:war_length
+				FROM = {
+					ROOT = {
+						set_temp_variable = {
+							war_length = THIS.war_length_with_@PREV
+						}
+					}
+				}
+				divide_temp_variable = {
+					war_length = 1
+				}
+			}
+			modifier = {
+				add = -5
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.25
+					}
+				}
+			}
+			modifier = {
+				add = -5
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.50
+					}
+				}
+			}
+			modifier = {
+				add = -5
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.75
+					}
+				}
+			}
+			modifier = {
+				add = -5
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 1
+					}
+				}
+			}
+			modifier = {
+				add = 12
+				FROM = {
+					#has_same_ideology = yes
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = -12
+				FROM = {
+					is_enemy_ideology = yes
+				}
+			}
+			modifier = {
+				add = -12
+				ROOT = {
+					OR = {
+						has_wargoal_against = FROM
+						has_war_with_wargoal_against = {
+							target = FROM
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -10
+				ROOT = {
+					OR = {
+						has_wargoal_against = {
+							target = FROM
+							type = puppet_wargoal_focus
+						}
+						has_war_with_wargoal_against = {
+							target = FROM
+							type = puppet_wargoal_focus
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				ROOT = {
+					OR = {
+						has_annex_war_goal = FROM
+						has_war_with_wargoal_against = {
+							target = FROM
+							type = annex_everything
+						}
+						has_war_with_wargoal_against = {
+							target = FROM
+							type = civil_war
+						}
+					}
+				}
+			}
+			modifier = {
+				add = var:distance_modifier
+				if = {
+					limit = {
+						any_state = {
+							CONTROLLER = {
+								has_war_with = FROM
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+									AND = {
+										ROOT = {
+											is_faction_leader = yes
+										}
+										is_in_faction_with = ROOT
+									}
+								}
+							}
+							any_neighbor_state = {
+								CONTROLLER = {
+									has_war_with = ROOT
+									OR = {
+										tag = FROM
+										is_subject_of = FROM
+										AND = {
+											FROM = {
+												is_faction_leader = yes
+											}
+											is_in_faction_with = FROM
+										}
+									}
+								}
+							}
+						}
+					}
+					set_temp_variable = {
+						distance_modifier = 0
+					}
+				}
+				else = {
+					FROM = {
+						capital_scope = {
+							set_temp_variable = {
+								FROM_capital = THIS
+							}
+						}
+					}
+					ROOT = {
+						capital_scope = {
+							set_temp_variable = {
+								ROOT_capital = THIS
+							}
+						}
+					}
+					var:FROM_capital = {
+						var:ROOT_capital = {
+							set_temp_variable = {
+								distance = distance_to@PREV
+							}
+						}
+					}
+					divide_temp_variable = {
+						distance = 10
+					}
+					set_temp_variable = {
+						world_threat = global.threat
+					}
+					multiply_temp_variable = {
+						world_threat = 5
+					}
+					set_temp_variable = {
+						distance_modifier = distance
+					}
+					divide_temp_variable = {
+						distance_modifier = world_threat
+					}
+				}
+			}
+			modifier = {
+				add = 12
+				any_other_country = {
+					has_war_with = ROOT
+					has_war_with = FROM
+				}
+			}
+			modifier = {
+				add = var:own_surrender
+				ROOT = {
+					set_temp_variable = {
+						own_surrender = THIS.surrender_progress
+					}
+				}
+				multiply_temp_variable = {
+					own_surrender = 100
+				}
+				divide_temp_variable = {
+					own_surrender = 2
+				}
+			}
+			modifier = {
+				add = 10
+				ROOT = {
+					is_major = no
+				}
+			}
+			modifier = {
+				add = -10
+				ROOT = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				add = -10
+				ROOT = {
+					is_faction_leader = yes
+				}
+			}
+			modifier = {
+				add = -25
+				any_country = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						AND = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+							is_in_faction_with = ROOT
+						}
+					}
+					any_state = {
+						OR = {
+							is_owned_by = PREV
+							is_owned_by = CONTROLLER
+						}
+						CONTROLLER = {
+							has_war_with = PREV.PREV
+							OR = {
+								tag = FROM
+								is_subject_of = FROM
+								AND = {
+									FROM = {
+										is_faction_leader = yes
+									}
+									is_in_faction_with = FROM
+								}
+							}
+						}
+						is_claimed_by = PREV
+					}
+				}
+			}
+			modifier = {
+				add = -50
+				any_country = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						AND = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+							is_in_faction_with = ROOT
+						}
+					}
+					any_state = {
+						OR = {
+							is_owned_by = PREV
+							is_owned_by = CONTROLLER
+						}
+						CONTROLLER = {
+							has_war_with = PREV.PREV
+							OR = {
+								tag = FROM
+								is_subject_of = FROM
+								AND = {
+									FROM = {
+										is_faction_leader = yes
+									}
+									is_in_faction_with = FROM
+								}
+							}
+						}
+						is_core_of = PREV
+					}
+				}
+			}
+			modifier = {
+				add = -1000
+				ROOT = {
+					is_government_in_exile = yes
+				}
+			}
+			modifier = {
+				factor = 0.13
+				ROOT = {
+					has_capitulated = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				ROOT = {
+					is_subject = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					is_in_faction = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					ROOT = {
+						has_country_flag = {
+							flag = DIPLOMACY_TRUE_PEACE_PROPOSAL_cooldown_@PREV
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		# AI modifiers to accept this diplomatic action, not valid if requires_acceptance is set to NO.
+		ai_acceptance = {
+			DR_BASE_RELUCTANCE = {
+				modifier = {
+					factor = -100
+				}
+			}
+			DR_COMPARED_DEPLOYED_MANPOWER = {
+				base = 0
+				modifier = {
+					add = -5
+					FROM = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.25
+						}
+					}
+				}
+				modifier = {
+					add = -5
+					FROM = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.50
+						}
+					}
+				}
+				modifier = {
+					add = -5
+					FROM = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.75
+						}
+					}
+				}
+				modifier = {
+					add = -5
+					FROM = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 1
+						}
+					}
+				}
+			}
+			DR_CONDITIONAL_SURRENDER_WORLD_THREAT_SCALED = {
+				modifier = {
+					factor = var:world_threat
+					set_temp_variable = {
+						world_threat = global.threat
+					}
+					multiply_temp_variable = {
+						world_threat = -1
+					}
+					multiply_temp_variable = {
+						world_threat = 10
+					}
+				}
+			}
+			DR_CONDITIONAL_SURRENDER_WAR_SUPPORT = {
+				modifier = {
+					factor = var:ws
+					FROM = {
+						set_temp_variable = {
+							ws = THIS.has_war_support
+						}
+					}
+					subtract_from_temp_variable  = {
+						ws = 0.5
+					}
+					multiply_temp_variable = {
+						ws = 10
+					}
+					multiply_temp_variable = {
+						ws = -1
+					}
+				}
+			}
+			DR_STABILITY = {
+				modifier = {
+					factor = var:s
+					FROM = {
+						set_temp_variable = {
+							s = THIS.has_stability
+						}
+					}
+					subtract_from_temp_variable  = {
+						s = 0.5
+					}
+					multiply_temp_variable = {
+						s = 10
+					}
+					multiply_temp_variable = {
+						s = -1
+					}
+				}
+			}
+			DR_CONDITIONAL_SURRENDER_EMBARGO = {
+				base = 0
+				modifier = {
+					add = 10
+					FROM = {
+						any_other_country = {
+							is_embargoing = PREV
+						}
+					}
+				}
+			}
+			DR_CONDITIONAL_SURRENDER_OWN_SURRENDER_LEVEL = {
+				base = 0
+				modifier = {
+					add = var:own_surrender
+					ROOT = {
+						set_temp_variable = {
+							own_surrender = THIS.surrender_progress
+						}
+					}
+					multiply_temp_variable = {
+						own_surrender = 100
+					}
+					divide_temp_variable = {
+						own_surrender = 2
+					}
+				}
+			}
+			DR_CONDITIONAL_SURRENDER_MINOR_WAR = {
+				base = 0
+				modifier = {
+					add = 10
+					FROM = {
+						is_major = no
+					}
+				}
+			}
+			DR_MAJOR = {
+				base = 0
+				modifier = {
+					add = -10
+					FROM = {
+						is_major = yes
+					}
+				}
+			}
+			DR_GOVERNMENT_EXILE = {
+				base = 0
+				modifier = {
+					add = -1000
+					FROM = {
+						is_government_in_exile = yes
+					}
+				}
+			}
+			DR_FACTION_LEADER = {
+				base = 0
+				modifier = {
+					add = -10
+					FROM = {
+						is_faction_leader = yes
+					}
+				}
+			}
+			DR_IDEOLOGY = {
+				base = 0
+				modifier = {
+					add = 12
+					FROM = {
+						#has_same_ideology = yes
+						has_government = ROOT
+					}
+				}
+				modifier = {
+					add = -12
+					FROM = {
+						is_enemy_ideology = yes
+					}
+				}
+			}
+			DR_DISTANCE_BETWEEN_CAPITALS = {
+				base = 0
+				modifier = {
+					add = var:distance_modifier
+					if = {
+						limit = {
+							any_state = {
+								CONTROLLER = {
+									has_war_with = FROM
+									OR = {
+										tag = ROOT
+										is_subject_of = ROOT
+										AND = {
+											ROOT = {
+												is_faction_leader = yes
+											}
+											is_in_faction_with = ROOT
+										}
+									}
+								}
+								any_neighbor_state = {
+									CONTROLLER = {
+										has_war_with = ROOT
+										OR = {
+											tag = FROM
+											is_subject_of = FROM
+											AND = {
+												FROM = {
+													is_faction_leader = yes
+												}
+												is_in_faction_with = FROM
+											}
+										}
+									}
+								}
+							}
+						}
+						set_temp_variable = {
+							distance_modifier = 0
+						}
+					}
+					else = {
+						FROM = {
+							capital_scope = {
+								set_temp_variable = {
+									FROM_capital = THIS
+								}
+							}
+						}
+						ROOT = {
+							capital_scope = {
+								set_temp_variable = {
+									ROOT_capital = THIS
+								}
+							}
+						}
+						var:FROM_capital = {
+							var:ROOT_capital = {
+								set_temp_variable = {
+									distance = distance_to@PREV
+								}
+							}
+						}
+						divide_temp_variable = {
+							distance = 10
+						}
+						set_temp_variable = {
+							world_threat = global.threat
+						}
+						multiply_temp_variable = {
+							world_threat = 5
+						}
+						set_temp_variable = {
+							distance_modifier = distance
+						}
+						divide_temp_variable = {
+							distance_modifier = world_threat
+						}
+					}
+				}
+			}
+			DR_WARGOAL = {
+				base = 0
+				modifier = {
+					add = -12
+					FROM = {
+						OR = {
+							has_wargoal_against = ROOT
+							has_war_with_wargoal_against = {
+								target = ROOT
+							}
+						}
+					}
+				}
+				modifier = {
+					add = -10
+					FROM = {
+						OR = {
+							has_wargoal_against = {
+								target = ROOT
+								type = puppet_wargoal_focus
+							}
+							has_war_with_wargoal_against = {
+								target = ROOT
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+				modifier = {
+					add = -20
+					FROM = {
+						OR = {
+							has_annex_war_goal = ROOT
+							has_war_with_wargoal_against = {
+								target = ROOT
+								type = annex_everything
+							}
+							has_war_with_wargoal_against = {
+								target = ROOT
+								type = civil_war
+							}
+						}
+					}
+				}
+			}
+			DR_THEIR_CONTROLLED_STATES_ON_US = {
+				base = 0
+				modifier = {
+					# calculating states control
+					set_temp_variable = { num_controls_states = 0 }
+					all_of_scopes = {
+						array = ROOT.owned_states
+						if = {
+							limit = { 
+								CONTROLLER = {
+									OR = {
+										tag = FROM
+										is_subject_of = FROM
+										AND = {
+											FROM = {
+												is_faction_leader = yes
+											}
+											is_in_faction_with = FROM
+										}
+									}
+								}
+							}
+							add_to_temp_variable = { num_controls_states = 1 }
+						}
+					}
+					# more score if more states are controlled
+					divide_temp_variable = {
+						num_controls_states = ROOT.num_owned_states
+					}
+					multiply_temp_variable = {
+						num_controls_states = 100
+					}
+					
+					divide_temp_variable = {
+						num_controls_states = 10
+					}
+					multiply_temp_variable = {
+						num_controls_states = -1
+					}
+					add = var:num_controls_states
+				}
+			}
+			DR_WAR_LENGTH = {
+				base = 0
+				modifier = {
+					add = var:war_length
+					FROM = {
+						ROOT = {
+							set_temp_variable = {
+								war_length = THIS.war_length_with_@PREV
+							}
+						}
+					}
+					divide_temp_variable = {
+						war_length = 1
+					}
+				}
+			}
+			DR_COMMON_ENNEMY = {
+				base = 0
+				modifier = {
+					add = 12
+					any_other_country = {
+						has_war_with = ROOT
+						has_war_with = FROM
+					}
+				}
+			}
+			DR_CLAIM_STATES_WE_CONTROL = {
+				base = 0
+				modifier = {
+					add = -25
+					any_country = {
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+							AND = {
+								FROM = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = FROM
+							}
+						}
+						any_state = {
+							OR = {
+								is_owned_by = PREV
+								is_owned_by = CONTROLLER
+							}
+							CONTROLLER = {
+								has_war_with = PREV.PREV
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+									AND = {
+										ROOT = {
+											is_faction_leader = yes
+										}
+										is_in_faction_with = ROOT
+									}
+								}
+							}
+							is_claimed_by = PREV
+						}
+					}
+				}
+			}
+			DR_CORE_STATES_WE_CONTROL = {
+				base = 0
+				modifier = {
+					add = -50
+					any_country = {
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+							AND = {
+								FROM = {
+									is_faction_leader = yes
+								}
+								is_in_faction_with = FROM
+							}
+						}
+						any_state = {
+							OR = {
+								is_owned_by = PREV
+								is_owned_by = CONTROLLER
+							}
+							CONTROLLER = {
+								has_war_with = PREV.PREV
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+									AND = {
+										ROOT = {
+											is_faction_leader = yes
+										}
+										is_in_faction_with = ROOT
+									}
+								}
+							}
+							is_core_of = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}

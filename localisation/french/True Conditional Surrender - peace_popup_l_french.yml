@@ -1,0 +1,6 @@
+﻿l_french:
+  TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_TITLE:0 "Traité de [?loser_capital.GetCapitalVictoryPointName]"
+  TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE:1 "Une §Ycapitulation conditionnelle§! a été signée entre §Y[?loser_country.GetFlag] [?loser_country.GetNameDef]§! et §Y[?winner_country.GetFlag] [?winner_country.GetNameDef]§!.\n[GetTrueConditionalSurrenderPeacePopupLoserEffect]"
+  TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_INDEPENDENT:0 "Est devenu indépendant, mais §Y[?loser_old_overlord.GetNameDef]§! dispose d'un but de guerre contre ce pays."
+  TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_LEFT_FACTION:0 "A quitter la faction."
+  TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_CLOSE:0 "Fermer"

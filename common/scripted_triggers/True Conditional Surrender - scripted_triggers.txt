@@ -1,0 +1,117 @@
+# In country scope
+is_true_peace_proposal_host_or_allies = {
+	OR = {
+		has_country_flag = true_peace_proposal_host
+		any_other_country = {
+			has_country_flag = true_peace_proposal_host
+			has_subject = PREV
+		}
+		any_other_country = {
+			has_country_flag = true_peace_proposal_host
+			is_in_faction_with = PREV
+		}
+	}
+}
+
+is_losing_or_no_winner = {
+	set_temp_variable = { ROOT_surrender_progress = 0 }
+	set_temp_variable = { ROOT_num = 0 }
+	set_temp_variable = { FROM_surrender_progress = 0 }
+	set_temp_variable = { FROM_num = 0 }
+	all_of_scopes = {
+		array = global.countries
+		if = {
+			limit = {
+				has_war_with = FROM
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+					AND = {
+						ROOT = {
+							is_faction_leader = yes
+						}
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			set_temp_variable = {
+				surrender_value = THIS.surrender_progress
+			}
+			if = {
+				limit = {
+					is_major = no
+				}
+				multiply_temp_variable = {
+					surrender_value = 0.50
+				}
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				multiply_temp_variable = {
+					surrender_value = 0.25
+				}
+			}
+			add_to_temp_variable = { ROOT_surrender_progress = var:surrender_value }
+			add_to_temp_variable = { ROOT_num = 1 }
+		}
+		if = {
+			limit = {
+				has_war_with = ROOT
+				OR = {
+					tag = FROM
+					is_subject_of = FROM
+					AND = {
+						FROM = {
+							is_faction_leader = yes
+						}
+						is_in_faction_with = FROM
+					}
+				}
+			}
+			set_temp_variable = {
+				surrender_value = THIS.surrender_progress
+			}
+			if = {
+				limit = {
+					is_major = no
+				}
+				multiply_temp_variable = {
+					surrender_value = 0.50
+				}
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				multiply_temp_variable = {
+					surrender_value = 0.25
+				}
+			}
+			add_to_temp_variable = { FROM_surrender_progress = var:surrender_value }
+			add_to_temp_variable = { FROM_num = 1 }
+		}
+	}
+	divide_temp_variable = {
+		ROOT_surrender_progress = ROOT_num
+	}
+	divide_temp_variable = {
+		FROM_surrender_progress = FROM_num
+	}
+	custom_trigger_tooltip = {
+		tooltip = "[?ROOT_surrender_progress] ≥ [?FROM_surrender_progress]"
+		check_variable = {
+			var = ROOT_surrender_progress
+			value = FROM_surrender_progress
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+has_true_conditional_surrender_proposal = {
+	custom_trigger_tooltip = {
+		tooltip = has_true_conditional_surrender_proposal_tt
+		has_country_flag = true_conditional_surrender_proposal
+	}
+}

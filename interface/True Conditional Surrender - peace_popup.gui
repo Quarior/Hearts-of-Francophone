@@ -1,0 +1,69 @@
+# From TNO
+guiTypes = {
+	containerWindowType = {
+		name = "True_Conditional_Surrender_peace_notification_window"
+		position = { x = 0 y = 0 }
+		size = { width = 564 height = 300 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		show_sound = peace_summary_message
+		#hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 100 y = 25 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_TITLE"
+			maxWidth = 360
+			maxHeight = 40
+			fixedsize = yes
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "message"
+			position = { x = 50 y = 86 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE"
+			maxWidth = 460
+			maxHeight = 72
+			format = centre
+			vertical_alignment = centre
+		}
+		
+		iconType = {
+			name = "flag_1"
+			position = { x = 20 y = 17 }
+			quadTextureSprite = "GFX_player_flag"
+		}
+		
+		iconType = {
+			name = "flag_2"
+			position = { x = 463 y = 17 }
+			quadTextureSprite = "GFX_player_flag"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x=213 y =240}
+			quadTextureSprite ="GFX_sort_button_140x29"
+			buttonText = "TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_CLOSE"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			#clicksound = click_ok
+			clicksound = click_default
+		}
+	}
+}

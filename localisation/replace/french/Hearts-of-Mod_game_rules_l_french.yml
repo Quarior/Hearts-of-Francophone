@@ -9,6 +9,12 @@
     RULE_OPTION_HEARTS_OF_MOD_FALL_OF_MOSCOW_ENABLED_DESC:0 "L'événement de la chute de Moscou peut se produire."
     RULE_OPTION_HEARTS_OF_MOD_FALL_OF_MOSCOW_DISABLED_DESC:0 "L'événement de la chute de Moscou ne se produira jamais."
 
+
+    RULE_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER:0 "§Yapitulation conditionnelle§!"
+
+    RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_ENABLED_DESC:0 "Permet d'activer une action diplomatique permettant à un pays de se rendre. Cette action est également disponible pour l'IA."
+    RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_DISABLED_DESC:0 "Désactive l'action diplomatique permettant à un pays de se rendre."
+
     # DIFFICULTES PERSONNALISES
     # Options de base
     RULE_OPTION_HOM_RANDOM_ENABLED:0 "Aléatoire (activé)"

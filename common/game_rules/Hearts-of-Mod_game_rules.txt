@@ -15,6 +15,23 @@ hearts_of_mod_fall_of_moscow = {
 	}
 }
 
+hearts_of_mod_enable_true_conditionnal_surrender = {
+	name = "RULE_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER"
+	group = "RULE_GROUP_HEARTS_OF_MOD"
+	default = {
+		name = ENABLED
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DISABLED
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_OPTION_HEARTS_OF_MOD_ENABLE_TRUE_CONDITIONNAL_SURRENDER_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
 # CUSTOM DIFFICULTY
 # --- GERMANY ---
 hom_ger_bonus_ai = {

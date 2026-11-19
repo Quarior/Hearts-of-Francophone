@@ -1,0 +1,22 @@
+﻿l_simp_chinese:
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_TITLE: "§Y有条件投降§!" #NT!
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_ACTION_DESC: "建议我们有条件投降。" #NT!
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_SEND_DESC: "建议我们有条件投降。该国将获得 [?FROM.DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT|%H] 和平点。其占领的领土将被吞并或非军事化，内战将暂停。\n[GetTruePeaceProposalRootEffect]" #NT!
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_RECEIVE_DESC: "有条件投降\n我们将获得 [?FROM.DIPLOMACY_TRUE_PEACE_PROPOSAL_score_factor_@ROOT|%H] 和平点。我们的被占领土将被吞并或非军事化，内战将暂停。\n[GetTruePeaceProposalRootEffect]" #NT!
+ DR_THEIR_CONTROLLED_STATES_ON_US: "他们对我们的控制状态" #NT!
+ DR_WAR_LENGTH: "战争长度" #NT!
+ DR_FACTION_LEADER: "派系领袖" #NT!
+ DR_WARGOAL: "战争目标" #NT!
+ is_losing_or_no_winner_tt: "正在失去，或者说这是现状。\n" #NT!
+ DR_COMMON_ENNEMY: "共同的敌人" #NT!
+ DR_STABILITY: "稳定" #NT!
+ DR_IDEOLOGY: "思想" #NT!
+ DR_CLAIM_STATES_WE_CONTROL: "声称我们控制的国家" #NT!
+ DR_CORE_STATES_WE_CONTROL: "我们控制的民族国家" #NT!
+ DR_GOVERNMENT_EXILE: "流亡政府" #NT!
+ has_true_conditional_surrender_proposal_tt: "有 $DIPLOMACY_TRUE_PEACE_PROPOSAL_TITLE$ 请求" #NT!
+ has_true_conditional_surrender_proposal_tt_NOT: "没有 $DIPLOMACY_TRUE_PEACE_PROPOSAL_TITLE$ 请求" #NT!
+ DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_TRUE_PEACE_PROPOSAL: "\n§Y[FROM.GetNameDefCap]§！有§Gaccepted§！我们提出和平。\n\n我们国家之间的战斗已经停止。" #NT!
+ DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_TRUE_PEACE_PROPOSAL: "\n§Y[FROM.GetNameDefCap]§！有§Rrefused§！我们提出和平。\n\n战争仍在继续。" #NT!
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_ROOT_EFFECT_INDEPENDENT: "会独立，但是§Y[ROOT.OVERLORD.GetNameDef]§！将对这个国家有一个战争目标。" #NT!
+ DIPLOMACY_TRUE_PEACE_PROPOSAL_ROOT_EFFECT_LEFT_FACTION: "会离开派系。" #NT!

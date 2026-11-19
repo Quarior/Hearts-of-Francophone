@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_TITLE: "[?loser_capital.GetCapitalVictoryPointName]条约" #NT!
+ TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE: "§Y[?loser_country.GetFlag] [?loser_country.GetNameDef]§! 和 §Y[?winner_country.GetFlag] [?winner_country.GetNameDef]§! 已签署§Y有条件投降§!协议。\n§!0" #NT!
+ TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_INDEPENDENT: "已经独立了，但是§Y[?loser_old_overlord.GetNameDef]§！对这个国家有一个战争目标。" #NT!
+ TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_MESSAGE_LOSER_EFFECT_LEFT_FACTION: "离开派系。" #NT!
+ TRUE_CONDITIONAL_SURRENDER_PEACE_POPUP_CLOSE: "关闭" #NT!
