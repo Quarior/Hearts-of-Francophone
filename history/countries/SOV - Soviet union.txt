@@ -878,7 +878,7 @@ add_ideas = {
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 
 	sov_trade
-	SOV_go_easy_on_aerial_production
+	#SOV_go_easy_on_aerial_production
 }
 
 create_intelligence_agency = { }

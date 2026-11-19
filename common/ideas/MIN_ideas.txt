@@ -186,6 +186,14 @@ ideas = {
 			
 			picture = HUN_the_cult_of_arpad_idea
 			
+			cancel = {
+				OR = {
+					HUN = {
+						is_ai = no
+					}
+				}
+			}
+			
 			allowed = {
 				original_tag = ROM
 			}
@@ -233,6 +241,8 @@ ideas = {
 			cancel = {
 				OR = {
 					has_war_with = GER
+					date > 1941.6.22
+					has_war_with_major = yes
 				}
 			}
 			allowed = {
@@ -265,19 +275,32 @@ ideas = {
 			cancel = {
 				OR = {
 					JAP = {
-						country_exists = no
+						OR = {
+							exists = no
+							has_capitulated = yes
+						}
 					}
+					date > 1945.9.2
+					GER = {
+						OR = {
+							exists = no
+							has_capitulated = yes
+						}
+					}
+					date > 1945.5.8
 				}
 			}
 			allowed = {
-				original_tag = ENG
-				original_tag = RAJ
-				original_tag = CAN
-				original_tag = AST
-				original_tag = SAF
-				original_tag = FRA
-				original_tag = USA
-				original_tag = MEX
+				OR = {
+					original_tag = ENG
+					original_tag = RAJ
+					original_tag = CAN
+					original_tag = AST
+					original_tag = SAF
+					original_tag = FRA
+					original_tag = USA
+					original_tag = MEX
+				}
 			}
 			allowed_civil_war = {
 				always = yes
@@ -309,6 +332,18 @@ ideas = {
 			cancel = {
 				OR = {
 					has_war_with = SOV
+					date > 1941.6.22
+					any_other_country = {
+						is_major = yes
+						has_war_with = ROOT
+						any_other_country = {
+							NOT = {
+								is_in_faction_with = PREV
+							}
+							is_major = yes
+							has_war_with = ROOT
+						}
+					}
 				}
 			}
 			modifier = {
@@ -344,8 +379,12 @@ ideas = {
 			removal_cost = -1
 			cancel = {
 				OR = {
+					has_capitulated = yes
 					BEL = {
 						has_capitulated = yes
+					}
+					NOT = {
+						controls_state = 28
 					}
 				}
 			}
