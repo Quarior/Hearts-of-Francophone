@@ -1,0 +1,228 @@
+﻿add_namespace = wtt_japan
+
+#  #  ##  #  #     ##   ##   ##  ###  ###  ##  ## ###  ##  #  #     ###   ##   ##  ### 
+## # #  # ## #    #  # #    #    #  # #   #   #    #  #  # ## #     #  # #  # #  #  #  
+# ## #  # # ## ## #### # ## # ## ###  ##   #   #   #  #  # # ##     ###  #### #     #  
+#  # #  # #  #    #  # #  # #  # #  # #     #   #  #  #  # #  #     #    #  # #  #  #  
+#  #  ##  #  #    #  #  ##   ##  #  # ### ##  ##  ###  ##  #  #     #    #  #  ##   #  
+
+
+#Japan propose NAP to ROOT
+country_event = {
+	id = wtt_japan.11
+	title = wtt_japan.11.t
+	desc = wtt_japan.11.desc
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	#Accept NAP
+	option = {
+		name = wtt_japan.11.a
+		ai_chance = {
+			base = 10
+		}
+		
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		
+		set_truce = {
+			target = FROM
+			days = 1423 # 1945.4.5 - 1941.4.13
+		}
+		
+		IF = {
+			limit = {
+				original_tag = CHI
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = trautmann_agreement_opm
+			}
+			
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = trautmann_agreement_opm
+				}	
+			}
+		}
+		ELSE_IF = {
+			limit = {
+				original_tag = SOV
+				655 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			655 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}	
+				add_resource = {
+					type = coal
+					amount = 2
+				}	
+				IF = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}	
+				}
+				IF = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}	
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}	
+				}
+			}
+		}
+		
+		FROM = { 
+			country_event = { 
+				id = wtt_japan.12 
+				days = 1 
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+				}
+				hidden_effect = {
+					PRC = {
+						country_event = { 
+							id = SEA_PRC_misc_events.12
+							days = 2
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	
+	
+	#Refuse NAP
+	option = {
+		name = wtt_japan.11.b
+		ai_chance = {
+			base = 0
+		}
+		
+		FROM = { 
+			country_event = { 
+				id = wtt_japan.13 
+				days = 1 
+			} 
+		}	
+		
+	}
+}
+
+#Japan propose NAP to ROOT
+country_event = {
+	id = wtt_japan.12
+	title = wtt_japan.12.t
+	desc = wtt_japan.12.desc
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_japan.12.a
+		ai_chance = {
+			base = 10
+		}
+		
+		effect_tooltip = {
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = yes
+			}
+			set_truce = {
+				target = FROM
+				days = 1423 # 1945.4.5 - 1941.4.13
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					FROM = {
+						original_tag = CHI
+					}
+				}
+				add_opinion_modifier = {
+					target = FROM
+					modifier = trautmann_agreement_opm
+				}
+				FROM = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = trautmann_agreement_opm
+					}	
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+					655 = {
+						is_owned_and_controlled_by = FROM
+					}
+				}
+				655 = {
+					add_resource = {
+						type = oil
+						amount = 8
+					}	
+					add_resource = {
+						type = coal
+						amount = 2
+					}	
+					IF = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}	
+					}
+					IF = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}	
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}	
+				}
+			}
+		}
+		
+	}
+}

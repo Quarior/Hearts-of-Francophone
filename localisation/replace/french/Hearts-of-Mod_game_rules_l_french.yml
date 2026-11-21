@@ -21,6 +21,16 @@
     RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_ENABLED_DESC:0 "Active les décisions qui permettent d'annexer automatiquement des territoires."
     RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_DISABLED_DESC:0 "Désactive les décisions d'annexion automatique de territoires."
 
+    # No Grind
+    RULE_HEARTS_OF_MOD_NO_GRIND:0 "No Grind"
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Active le no_grind (pas de grind de l'IA)."
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "Désactive le no_grind."
+
+    # France de Vichy si IA
+    RULE_HEARTS_OF_MOD_VICHY_FRANCE_AI:0 "France de Vichy si IA"
+    RULE_OPTION_HEARTS_OF_MOD_VICHY_FRANCE_AI_ENABLED_DESC:0 "Active la formation de la France de Vichy lorsque la France est contrôlée par l'IA."
+    RULE_OPTION_HEARTS_OF_MOD_VICHY_FRANCE_AI_DISABLED_DESC:0 "Désactive la formation automatique de la France de Vichy pour l'IA."
+
     # DIFFICULTES PERSONNALISES
     # Options de base
     RULE_OPTION_HOM_RANDOM_ENABLED:0 "Aléatoire (activé)"

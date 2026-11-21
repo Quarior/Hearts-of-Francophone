@@ -2,8 +2,16 @@ on_actions = {
     on_startup = {
         effect = {
             every_country = {
-                every_army_leader = {
-                    add_unit_leader_trait = no_grind
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            rule = hearts_of_mod_no_grind
+                            option = ENABLED
+                        }
+                    }
+                    every_army_leader = {
+                        add_unit_leader_trait = no_grind
+                    }
                 }
                 add_daily_mastery = {
                     amount = 1 #0.67

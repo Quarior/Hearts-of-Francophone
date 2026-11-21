@@ -573,6 +573,10 @@ country_event = {
 			add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 		}
 		diplomatic_relation = { country = SOV relation = non_aggression_pact }
+		set_truce = {
+			target = SOV
+			days = 669 # 1941.6.22 - 1939.8.23
+		}
 		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 		USA = {
 			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }

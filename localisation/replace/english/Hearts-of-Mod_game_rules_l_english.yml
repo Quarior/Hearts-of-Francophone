@@ -21,6 +21,16 @@
     RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_ENABLED_DESC:0 "Enables decisions that allow automatic annexation of territories."
     RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_DISABLED_DESC:0 "Disables decisions for automatic annexation of territories."
 
+    # No Grind
+    RULE_HEARTS_OF_MOD_NO_GRIND:0 "No Grind"
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Enables no_grind (prevents AI from grinding)."
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "Disables no_grind."
+
+    # Vichy France if AI
+    RULE_HEARTS_OF_MOD_VICHY_FRANCE_AI:0 "Vichy France if AI"
+    RULE_OPTION_HEARTS_OF_MOD_VICHY_FRANCE_AI_ENABLED_DESC:0 "Enables the formation of Vichy France when France is controlled by the AI."
+    RULE_OPTION_HEARTS_OF_MOD_VICHY_FRANCE_AI_DISABLED_DESC:0 "Disables the automatic formation of Vichy France for the AI."
+
     # CUSTOM DIFFICULTIES
     # Base Options
     RULE_OPTION_HOM_RANDOM_ENABLED:0 "Random (enabled)"

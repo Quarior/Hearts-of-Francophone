@@ -396,7 +396,6 @@ country_event = {
 		trigger = {
 			has_government = fascism
 			has_dlc = "La Resistance"
-			VIC = { is_ai = no }
 		}
 		hidden_effect = {
 		FRA = { 
@@ -650,7 +649,13 @@ country_event = {
 			}
 		}
 		trigger = {
-			VIC = { is_ai = yes }
+			VIC = {
+				is_ai = yes
+				has_game_rule = {
+					rule = hearts_of_mod_vichy_france_ai
+					option = DISABLED
+				}
+			}
 		}
 		GER = {
 			annex_country = { 

@@ -13572,6 +13572,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			date > 1939.8.23
 		}
 		
 		search_filters = {}
@@ -13610,9 +13611,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
-			GER = {
-				has_completed_focus = GER_molotov_ribbentrop_pact
-			}
+			date > 1939.8.23
 		}
 
 		bypass = {
