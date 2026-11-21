@@ -5745,23 +5745,31 @@ JAP_kwantung_army_decisions = {
 					tot_economic_mobilisation
 				}
 			}
-			JAP = {
-				create_wargoal = {
-					target = CHI
-					type = annex_everything
+			if = {
+				limit = {
+					MAN = {
+						exists = yes
+						is_ally_with = ROOT
+					}
 				}
-				create_wargoal = {
-					target = PRC
-					type = annex_everything
-				}
-				add_offsite_building = {
-					type = industrial_complex level = 16
-				}
-				add_offsite_building = {
-					type = arms_factory level = 11
-				}
-				add_ideas = {
-					tot_economic_mobilisation
+				MAN = {
+					create_wargoal = {
+						target = CHI
+						type = annex_everything
+					}
+					create_wargoal = {
+						target = PRC
+						type = annex_everything
+					}
+					add_offsite_building = {
+						type = industrial_complex level = 16
+					}
+					add_offsite_building = {
+						type = arms_factory level = 11
+					}
+					add_ideas = {
+						tot_economic_mobilisation
+					}
 				}
 			}
 		}
@@ -5795,9 +5803,20 @@ JAP_kwantung_army_decisions = {
 						state = 747
 					}
 				}
-				set_temp_variable = { dest_owner = JAP }
+				if = {
+					limit = {
+						MAN = {
+							exists = yes
+							is_ally_with = ROOT
+						}
+					}
+					set_temp_variable = { dest_owner = MAN }
+				}
+				else = {
+					set_temp_variable = { dest_owner = ROOT }
+				}
 				add_compliance_70_conditionnel_owner = yes
-				add_claim_by = JAP
+				add_claim_by = var:dest_owner
 			}
 			ROOT = {
 				declare_war_on = { target = CHI type = annex_everything }
@@ -5897,9 +5916,20 @@ JAP_kwantung_army_decisions = {
 						state = 613
 					}
 				}
-				set_temp_variable = { dest_owner = JAP }
+				if = {
+					limit = {
+						MAN = {
+							exists = yes
+							is_ally_with = ROOT
+						}
+					}
+					set_temp_variable = { dest_owner = MAN }
+				}
+				else = {
+					set_temp_variable = { dest_owner = ROOT }
+				}
 				add_compliance_70_conditionnel_owner = yes
-				add_claim_by = JAP
+				add_claim_by = var:dest_owner
 			}
 			news_event = { id = news.121 }
 		}
@@ -5948,15 +5978,23 @@ JAP_kwantung_army_decisions = {
 						state = 743
 					}
 				}
-				set_temp_variable = { dest_owner = JAP }
+				if = {
+					limit = {
+						MAN = {
+							exists = yes
+							is_ally_with = ROOT
+						}
+					}
+					set_temp_variable = { dest_owner = MAN }
+				}
+				else = {
+					set_temp_variable = { dest_owner = ROOT }
+				}
 				add_compliance_70_conditionnel_owner = yes
-				add_claim_by = JAP
+				add_claim_by = var:dest_owner
 			}
 			every_state = {
 				limit = {
-					MAN = {
-						exists = yes
-					}
 					OWNER = {
 						NOT = {
 							has_war_with = ROOT
@@ -5967,28 +6005,20 @@ JAP_kwantung_army_decisions = {
 						state = 608
 					}
 				}
-				set_temp_variable = { dest_owner = MAN }
-				transfer_state_to_conditionnel_owner  = yes
-				add_claim_by = MAN
-			}
-			every_state = {
-				limit = {
-					MAN = {
-						exists = no
-					}
-					OWNER = {
-						NOT = {
-							has_war_with = ROOT
+				if = {
+					limit = {
+						MAN = {
+							exists = yes
+							is_ally_with = ROOT
 						}
 					}
-					OR = {
-						state = 1039
-						state = 608
-					}
+					set_temp_variable = { dest_owner = MAN }
 				}
-				set_temp_variable = { dest_owner = JAP }
+				else = {
+					set_temp_variable = { dest_owner = ROOT }
+				}
 				add_compliance_70_conditionnel_owner = yes
-				add_claim_by = JAP
+				add_claim_by = var:dest_owner
 			}
 		}
 	}

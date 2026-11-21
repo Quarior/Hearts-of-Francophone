@@ -512,7 +512,7 @@ political_actions = {
 			}
 		}
 	}
-
+	
 	JAP_annex_manchuria = {
 		name = " No Manchu ?  No problem "
 		icon = GFX_decision_eng_trade_unions_demand
@@ -547,11 +547,33 @@ political_actions = {
 		complete_effect = {
 			JAP = {
 				annex_country = { target = MAN transfer_troops = yes }
+				if = {
+					limit = {
+						EHA = {
+							exists = yes
+							is_ai = yes
+							NOT = {
+								has_war_with = ROOT
+							}
+						}
+					}
+					annex_country = { target = MAN transfer_troops = yes }
+				}
 				add_manpower = 1000000
 				add_research_slot = 1
 			}
 			every_state = {
 				limit = {
+					OWNER = {
+						OR = {
+							tag = MAN
+							tag = EHA
+							tag = ROOT
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
 					OR = {
 						state = 716
 						state = 610
@@ -565,9 +587,8 @@ political_actions = {
 						state = 609
 					}
 				}
-				set_temp_variable = { dest_owner = JAP }
 				add_compliance_70_conditionnel_owner = yes
-				add_claim_by = JAP
+				add_claim_by = ROOT
 			}
 		}
 	}
