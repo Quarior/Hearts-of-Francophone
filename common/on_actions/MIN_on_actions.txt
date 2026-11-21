@@ -705,26 +705,10 @@ on_actions = {
                 }
             }
             ## East Hebei Autonomous Government
-            #EHA = {
-            #    transfer_state = 716
-            #    add_state_core = 716
-            #    transfer_state = 610
-            #    add_state_core = 610
-            #    transfer_state = 715
-            #    add_state_core = 715
-            #    transfer_state = 328
-            #    add_state_core = 328
-            #    transfer_state = 717
-            #    add_state_core = 717
-            #    transfer_state = 714
-            #    add_state_core = 714
-            #    transfer_state = 761
-            #    add_state_core = 761
-            #    transfer_state = 612
-            #    add_state_core = 612
-            #    transfer_state = 611
-            #    add_state_core = 611
-            #}
+            EHA = {
+                transfer_state = 609
+                add_state_core = 609
+            }
             ## Manchukou
             MAN = {
                 # Ideas
@@ -733,11 +717,10 @@ on_actions = {
                 add_ideas = MIN_minors_infra_boost
                 add_ideas = MIN_minors_experimental_facilities_boost
                 
-                transfer_state = 609
-                add_state_core = 609
+                
                 transfer_state = 612
-                transfer_state = 611
                 add_state_core = 612
+                transfer_state = 611
                 add_state_core = 611
                 
                 add_offsite_building = {
@@ -1171,32 +1154,6 @@ on_actions = {
                 
             }
         }
-        # Set up right core of EHA
-        effect = {
-            if = {
-                limit = {
-                    NOT = {
-                        has_global_flag = set_up_EHA_right_core
-                    }
-                    NOT = {
-                        country_exists = EHA
-                    }
-                }
-                set_global_flag = set_up_EHA_right_core
-                EHA = {
-                    every_core_state = {
-                        remove_core_of = PREV
-                    }
-                    609 = {
-                        add_core_of = PREV
-                    }
-                    set_capital = {
-                        state = 609
-                        remember_old_capital = no
-                    }
-                }
-            }
-        }
     }
     on_declare_war = {
         effect = {
@@ -1301,22 +1258,21 @@ on_actions = {
         }
     }
     on_daily = {
-		effect = {
-			if = {
-				limit = {
-					FRA = { has_capitulated = yes }
-					POL = { has_capitulated = yes }
-                    NOT = {
-                        has_global_flag = remove_grind
+        effect = {
+            if = {
+                limit = {
+                    any_character = {
+                        has_trait = no_grind
                     }
-				}
-                set_global_flag = remove_grind
-				every_country = {
-                    every_army_leader = {
-                        remove_unit_leader_trait = no_grind
-                    }
+                    date > 1938.9.27
                 }
-			}
-		}
-	}
+                every_character = {
+                    limit = {
+                        has_trait = no_grind
+                    }
+                    remove_unit_leader_trait = no_grind
+                }
+            }
+        }
+    }
 }
