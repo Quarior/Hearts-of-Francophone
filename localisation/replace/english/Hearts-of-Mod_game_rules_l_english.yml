@@ -23,7 +23,7 @@
 
     # No Grind
     RULE_HEARTS_OF_MOD_NO_GRIND:0 "No Grind"
-    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Enables no_grind (prevents AI from grinding)."
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Enables no_grind."
     RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "Disables no_grind."
 
     # Vichy France if AI

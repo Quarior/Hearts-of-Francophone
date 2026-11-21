@@ -23,7 +23,7 @@
 
     # No Grind
     RULE_HEARTS_OF_MOD_NO_GRIND:0 "无研磨"
-    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "启用no_grind（防止AI研磨）。"
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "启用no_grind。"
     RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "禁用no_grind。"
 
     # Vichy France if AI
