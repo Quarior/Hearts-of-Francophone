@@ -22,9 +22,9 @@
     RULE_OPTION_HEARTS_OF_MOD_AUTO_DECISIONS_BONUS_DISABLED_DESC:0 "Désactive les décisions d'annexion automatique de territoires."
 
     # No Grind
-    RULE_HEARTS_OF_MOD_NO_GRIND:0 "No Grind"
-    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Active le no_grind."
-    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "Désactive le no_grind."
+    RULE_HEARTS_OF_MOD_NO_GRIND:0 "No Grind (jusqu'à 1938.9.27)"
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_ENABLED_DESC:0 "Empêche tous les personnages de gagner de l'expérience jusqu'à une certaine date."
+    RULE_OPTION_HEARTS_OF_MOD_NO_GRIND_DISABLED_DESC:0 "Les personnages peuvent gagner de l'expérience normalement dès le début."
 
     # France de Vichy si IA
     RULE_HEARTS_OF_MOD_VICHY_FRANCE_AI:0 "France de Vichy si IA"
