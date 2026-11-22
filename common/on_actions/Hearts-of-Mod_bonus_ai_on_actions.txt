@@ -461,27 +461,27 @@ on_actions = {
 			# Apply ideas based on flags
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_air }
-				add_ideas = bonus_ia_armee_de_lair
+				add_ideas = hom_bonus_ia_armee_de_lair
 			}
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_armored }
-				add_ideas = bonus_ia_blindee
+				add_ideas = hom_bonus_ia_blindee
 			}
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_economic }
-				add_ideas = bonus_ia_economique
+				add_ideas = hom_bonus_ia_economique
 			}
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_massmob }
-				add_ideas = bonus_ia_massmob
+				add_ideas = hom_bonus_ia_massmob
 			}
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_prototype }
-				add_ideas = bonus_ia_prototype
+				add_ideas = hom_bonus_ia_prototype
 			}
 			every_possible_country = {
 				limit = { has_country_flag = hom_bonus_ia_naval }
-				add_ideas = bonus_ia_naval
+				add_ideas = hom_bonus_ia_naval
 			}
 		}
 	}
