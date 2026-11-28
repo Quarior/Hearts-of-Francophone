@@ -1,0 +1,6 @@
+﻿l_english:
+ useful-events-quarior-create_dynamic_country.1.t: "Creation of dynamic country for [ROOT.GetNameDef]"
+ useful-events-quarior-create_dynamic_country.1.d: "The new dynamic country should be reserve?"
+ useful-events-quarior-create_dynamic_country.1.a: "Yes. We need them throughout the game."
+ useful-events-quarior-create_dynamic_country.1.b: "No. It can be recycle."
+  

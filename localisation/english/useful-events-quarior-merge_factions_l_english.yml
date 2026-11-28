@@ -1,0 +1,11 @@
+﻿l_english:
+ useful-events-quarior-merge_faction.1.t: "[From.GetNameDefCap] suggest to merge our alliances"
+ useful-events-quarior-merge_faction.1.desc: "The [From.GetAdjective] government has approached us with a proposal to reconcile our divergent strategic interests. They are aware of our shared interests in many parts of the world.\n\nTheir proposal therefore suggests that we join them in an alliance that would assure mutual assistance if either of us sees their interests threatened."
+ useful-events-quarior-merge_faction.1.a: "$lar_fra_join_the_ententes.1.a$"
+ useful-events-quarior-merge_faction.1.b: "$lar_fra_join_the_ententes.1.b$"
+ useful-events-quarior-merge_faction.2.t: "$lar_fra_join_the_ententes.2.t$"
+ useful-events-quarior-merge_faction.2.desc: "The [From.GetAdjective] government has discussed our proposed alliance and decided to accept it."
+ useful-events-quarior-merge_faction.2.a: "$lar_fra_join_the_ententes.2.a$"
+ useful-events-quarior-merge_faction.3.t: "$lar_fra_join_the_ententes.3.t$"
+ useful-events-quarior-merge_faction.3.desc: "After extensive discussion, the [From.GetAdjective] cabinet has narrowly voted to reject our proposal."
+ useful-events-quarior-merge_faction.3.a: "$lar_fra_join_the_ententes.3.a$"

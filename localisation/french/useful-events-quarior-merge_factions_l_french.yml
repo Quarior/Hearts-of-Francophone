@@ -1,0 +1,11 @@
+﻿l_french:
+  useful-events-quarior-merge_faction.1.t:0 "[From.GetNameDefCap] suggère de fusionner nos alliances"
+  useful-events-quarior-merge_faction.1.desc:0 "Le gouvernement [From.GetAdjective] s'est approché de nous avec une proposition de reconsidérer nos divergences d'intérêts stratégiques. Ils sont conscients de nos intérêts partagés dans de nombreuses régions du monde.\n\nLa proposition suggère donc que nous les rejoignons dans une alliance qui assurerait une assistance mutuelle si l'un de nous voyait leurs intérêts menacés."
+  useful-events-quarior-merge_faction.1.a:0 "$lar_fra_join_the_ententes.1.a$"
+  useful-events-quarior-merge_faction.1.b:0 "$lar_fra_join_the_ententes.1.b$"
+  useful-events-quarior-merge_faction.2.t:0 "$lar_fra_join_the_ententes.2.t$"
+  useful-events-quarior-merge_faction.2.desc:0 "Le gouvernement [From.GetAdjective] a discuté de notre proposition d'alliance et a décidé d'accepter."
+  useful-events-quarior-merge_faction.2.a:0 "$lar_fra_join_the_ententes.2.a$"
+  useful-events-quarior-merge_faction.3.t:0 "$lar_fra_join_the_ententes.3.t$"
+  useful-events-quarior-merge_faction.3.desc:0 "Après une discussion prolongée, le cabinet du gouvernement [From.GetAdjective] a rejeté notre proposition."
+  useful-events-quarior-merge_faction.3.a:0 "$lar_fra_join_the_ententes.3.a$"

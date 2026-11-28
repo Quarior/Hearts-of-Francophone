@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ useful-events-quarior-merge_faction.1.t: "[From.GetNameDefCap]建议合并我们的联盟"
+ useful-events-quarior-merge_faction.1.desc: "[From.GetAdjective] 政府已向我们提出一项调和我们不同战略利益的建议。他们意识到我们在世界许多地方的共同利益。\n\n因此，他们的提议建议我们加入他们的联盟，如果我们中的任何一方看到他们的利益受到威胁，该联盟将确保相互援助。"
+ useful-events-quarior-merge_faction.1.a: "$lar_fra_join_the_ententes.1.a$"
+ useful-events-quarior-merge_faction.1.b: "$lar_fra_join_the_ententes.1.b$"
+ useful-events-quarior-merge_faction.2.t: "$lar_fra_join_the_ententes.2.t$"
+ useful-events-quarior-merge_faction.2.desc: "[From.GetAdjective]政府已经讨论了我们提议的联盟并决定接受它。"
+ useful-events-quarior-merge_faction.2.a: "$lar_fra_join_the_ententes.2.a$"
+ useful-events-quarior-merge_faction.3.t: "$lar_fra_join_the_ententes.3.t$"
+ useful-events-quarior-merge_faction.3.desc: "经过广泛讨论，[From.GetAdjective]内阁以微弱优势投票否决了我们的提议。"
+ useful-events-quarior-merge_faction.3.a: "$lar_fra_join_the_ententes.3.a$"

@@ -1,0 +1,6 @@
+﻿l_french:
+  useful-events-quarior-create_dynamic_country.1.t:0 "Création d'un pays dynamique pour [ROOT.GetNameDef]"
+  useful-events-quarior-create_dynamic_country.1.d:0 "Le nouveau pays dynamique doit être réservé ?"
+  useful-events-quarior-create_dynamic_country.1.a:0 "Oui. Nous avons besoin pendant toute la partie."
+  useful-events-quarior-create_dynamic_country.1.b:0 "Non. Il peut être recyclé."
+  

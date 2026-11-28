@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ useful-events-quarior-annexion_ultimatum.1.t: "[From.GetNameDefCap] 要求 [Root.GetAdjective] 吞并！"
+ useful-events-quarior-annexion_ultimatum.1.d: "今天，[From.GetAdjective] 总统收到了一封非常令人担忧的电报，要求[Root.GetNameDef] 放下武器，将所有领土割让给 [From.GetAdjective] 州。 [From.GetNameDefCap]一直试图将我们的国家与他们合并，现在他们似乎认为，我们两国之间仅仅战争威胁就足以导致[Root.GetLeader]崩溃。"
+ useful-events-quarior-annexion_ultimatum.1.a: "很好。"
+ useful-events-quarior-annexion_ultimatum.1.b: "绝对不是！"
+ useful-events-quarior-annexion_ultimatum.2.t: "[From.GetNameDefCap] 接受！"
+ useful-events-quarior-annexion_ultimatum.2.d: "今天是庆祝[Root.GetNameDef]的伟大日子，因为[From.GetAdjective]军队放下了武器，允许[Root.GetAdjective]士兵直接进军首都，宣布[Root.GetNameDef]和[From.GetNameDef]统一！"
+ useful-events-quarior-annexion_ultimatum.2.a: "欢迎来到国家！"
+ useful-events-quarior-annexion_ultimatum.3.t: "[From.GetNameDefCap] 挑衅！"
+ useful-events-quarior-annexion_ultimatum.3.d: "今天，[From.GetAdjective] 最高指挥部已做出回应，断然拒绝所有 [Root.GetAdjective] 的要求，并声称他们“不会允许 [Root.GetLeader] 践踏 [From.GetAdjective] 主权”。虽然许多人宁愿不与 [From.GetNameDef] 进入另一场战争状态，但如果 [Root.GetLeader] 不尽快做出回应，未来 [Root.GetAdjective] 的要求不太可能得到认真对待。"
+ useful-events-quarior-annexion_ultimatum.3.a: "[Root.GetNameDef] 和 [From.GetNameDef] 合二为一！"
+  

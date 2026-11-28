@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ useful-events-quarior-submission.1.t: "[FROM.GetNameDefCap]提出要求"
+ useful-events-quarior-submission.1.desc: "[FROM.GetAdjective]大使已发出照会，要求立即与[THIS.GetLeader]进行磋商。根据该说明，[FROM.GetAdjective]政府不再愿意容忍我国“不确定的安全局势”。目前尚不清楚这指的是什么，但显然我们实际上有两个选择：同意在我们的土地上驻扎[FROM.GetAdjective]部队；或者可能是[FROM.GetNameDef]的军事攻击。"
+ useful-events-quarior-submission.1.a: "我们别无选择。"
+ useful-events-quarior-submission.1.b: "我们将为我们的自由而战！"
+  
+ useful-events-quarior-submission.2.t: "[FROM.GetNameDefCap] 提交"
+ useful-events-quarior-submission.2.desc: "经过一场持续到凌晨的内阁会议后，[FROM.GetLeader] 正式接受了我们的要求。我们驻[FROM.GetNameDef] 大使将确保[FROM.GetAdjective] 政府在任何外交或国内政策问题上与我们密切协调。"
+ useful-events-quarior-submission.2.a: "非常明智。"
+  
+ useful-events-quarior-submission.3.t: "[FROM.GetNameDefCap] 拒绝"
+ useful-events-quarior-submission.3.desc: "我们试图通过外交手段解决与 [FROM.GetNameDef] 的未决问题似乎失败了。当我们的大使呼吁[FROM.GetLeader]进行另一轮谈判时，他被生硬地告知[FROM.GetAdjective]已经表明了立场，没有进一步的事情可以讨论。"
+ useful-events-quarior-submission.3.a: "他们选择了更糟糕的命运。"
+ useful-events-quarior-submission.3.b: "我们暂时不会进一步推动他们。"

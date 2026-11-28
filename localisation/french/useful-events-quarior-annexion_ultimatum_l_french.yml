@@ -1,0 +1,12 @@
+﻿l_french:
+  useful-events-quarior-annexion_ultimatum.1.t:0 "[From.GetLeLaLNPCap] [From.GetName] exig[From.GetEEntNP]\nnotre annexion"
+  useful-events-quarior-annexion_ultimatum.1.d:0 "Un télégramme inquiétant est arrivé aujourd'hui sur le bureau de [Root.GetLeader], venant de [From.GetLeader], exigeant que [Root.GetLeLaLNP] [Root.GetName] dépos[Root.GetEEntNP] les armes et cèd[Root.GetEEntNP] tous [Root.GetSesLeursNP] territoires [From.GetAuAlaAlNP] [From.GetName]. [From.GetCeluiCelleNPCap]-ci [From.GetAOntNP] tenté de fusionner notre nation à la leur, et sembl[From.GetEEntNP] maintenant persuadé[From.GetXENP] que la simple menace d'une nouvelle guerre suffira à faire reculer [Root.GetLeader]..."
+  useful-events-quarior-annexion_ultimatum.1.a:0 "Très bien..."
+  useful-events-quarior-annexion_ultimatum.1.b:0 "C'est évidemment hors de question !"
+  useful-events-quarior-annexion_ultimatum.2.t:0 "[From.GetLeLaLNPCap] [From.GetName] accept[From.GetEEntNP]"
+  useful-events-quarior-annexion_ultimatum.2.d:0 "Aujourd'hui est un jour de grandes réjouissances [Root.GetAuEnANP] [Root.GetName] : l'armée [From.GetAdjective] a déposé les armes et autorisé les troupes [Root.GetAdjective] à entrer dans [From.Capital.GetCapitalVictoryPointName] pour proclamer l'unification [Root.GetDuDelaDelNP] [Root.GetName] et [From.GetDuDelaDelNP] [From.GetName] !"
+  useful-events-quarior-annexion_ultimatum.2.a:0 "Bienvenue dans la nation !"
+  useful-events-quarior-annexion_ultimatum.3.t:0 "Refus [From.GetDuDelaDelNP] [From.GetName]"
+  useful-events-quarior-annexion_ultimatum.3.d:0 "Le gouvernement [From.GetAdjective] a fait parvenir sa réponse à notre requête, refusant crânement toutes nos exigences et prétendant qu'il ferait tout ce qui serait en son pouvoir pour « empêcher [Root.GetLeader] de fouler aux pieds la souveraineté [From.GetAdjective] ».\n\nNombreux sont ceux qui préféreraient éviter un conflit avec les [From.GetAdjective] ; mais le fait est que si [Root.GetLeader] ne répond par de manière prompte et rapide, il faudra un moment avant que les requêtes présentées par [Root.GetLeLaLNP] [Root.GetName] soient de nouveau considérées avec le moindre sérieux."
+  useful-events-quarior-annexion_ultimatum.3.a:0 "[Root.GetAdjective] et [From.GetAdjective]\nseront bientôt unis !"
+  

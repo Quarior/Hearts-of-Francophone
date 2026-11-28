@@ -1,0 +1,14 @@
+﻿l_french:
+  useful-events-quarior-submission.1.t:0 "Exigences [From.GetAdjective]"
+  useful-events-quarior-submission.1.desc:1 "L'ambassadeur [From.GetAdjective] vient de nous délivrer une missive demandant une consultation immédiate avec [Root.GetLeader]. Selon ce message, [From.GetNameDef] ne peut plus tolérer davantage les « incertitudes liées à la sécurité de [Root.GetNameDef] ». Il est difficile de savoir précisément à quoi cela se réfère, mais il paraît au moins évident que deux possibilités nous sont offertes par les [From.GetAdjective] : soit accepter que leurs troupes stationnent sur notre sol ; soit une invasion."
+  useful-events-quarior-submission.1.a:0 "Ils ne nous laissent gère le choix..."
+  useful-events-quarior-submission.1.b:0 "Il est hors de question de renoncer\nà notre indépendance !"
+
+  useful-events-quarior-submission.2.t:0 "Soumission de [From.GetNameDef]"
+  useful-events-quarior-submission.2.desc:0 "Au terme d'une réunion du gouvernement tenue tôt ce matin, [From.GetLeader] a officiellement accédé à la demande qui lui avait été présentée. Notre ambassadeur en [From.GetName] va s'assurer que le gouvernement [From.GetAdjective] travaille désormais en étroite collaboration avec [Root.GetNameDef] pour tout ce qui regarde les questions politiques - aussi bien intérieures qu'extérieures."
+  useful-events-quarior-submission.2.a:0 "[From.GetLeader]\na bien fait."
+
+  useful-events-quarior-submission.3.t:0 "[From.GetNameDef]\nrejette nos demandes"
+  useful-events-quarior-submission.3.desc:0 "\nLes tentatives pour résoudre diplomatiquement les problèmes avec [From.GetNameDef] n'ont rien donné. Alors que notre ambassadeur sur place avait été invité par [From.GetLeader] pour une dernière entrevue, il lui a été annoncé de manière brutale que le gouvernement [From.GetAdjective] avait déjà présenté clairement sa position et qu'il n'y avait donc plus désormais matière à la moindre discussion."
+  useful-events-quarior-submission.3.a:0 "Espérons qu'ils ne viendront pas\nse plaindre ensuite..."
+  useful-events-quarior-submission.3.b:0 "Ne poussons donc pas davantage,\npour l'instant en tout cas..."

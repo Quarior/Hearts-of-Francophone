@@ -1,0 +1,13 @@
+﻿l_french:
+  useful-events-quarior-coup.1.t:0 "Tentative de coup d'État [FROM.GetRulingIdeology]"
+  useful-events-quarior-coup.1.desc:0 "Les membres des forces armées [ROOT.GetAdjective] supportés par [FROM.GetNameDef] ont orchestré un coup d'État contre le gouvernement de [ROOT.GetLeader]. [ROOT.GetLeader.GetSheHeCap] devait procéder à une inspection des troupes lorsqu'[ROOT.GetLeader.GetSheHe] est tombé dans une embuscade et a été arrêté.\n$tab_news$Nous attendons les nouvelles de cette tentative."
+  useful-events-quarior-coup.1.a:0 "Espérons que cela soit favorable."
+  useful-events-quarior-coup.2.t:0 "Coup d'État [FROM.FROM.GetRulingIdeology] [FROM.GetAuEnANP] [FROM.GetName]"
+  useful-events-quarior-coup.2.desc:0 "\nLes membres des forces armées [FROM.GetAdjective] supportés par [FROM.FROM.GetNameDef] ont orchestré un coup d'État contre le gouvernement de [FROM.GetLeader]. [FROM.GetLeader.GetSheHeCap] devait procéder à une inspection des troupes lorsqu'[FROM.GetLeader.GetSheHe] est tombé dans une embuscade et a été arrêté. Au même moment, à [FROM.Capital.GetCapitalVictoryPointName], les partisants [FROM.FROM.GetRulingIdeology] prenaient le contrôle d'infrastructures stratégiques, dont le siège du gouvernement.\n$tab_news$Le reste du pays est désormais sous le contrôle d'un gouvernement [FROM.FROM.GetRulingIdeology]. La majorité de la population semble généralement accepter l'autorité du nouveau gouvernement."
+  useful-events-quarior-coup.2.a:0 "Notre nouveau gouvernement commence !"
+  useful-events-quarior-coup.2.b:0 "La Révolution [FROM.FROM.GetRulingIdeology] progresse !"
+  useful-events-quarior-coup.2.c:0 "Le péril [FROM.FROM.GetRulingIdeology] s'aggrave encore..."
+  useful-events-quarior-coup.3.t:0 "Tentative de coup d'État [ROOT.GetRulingIdeology] [FROM.GetAuEnANP] [FROM.GetName] échouée"
+  useful-events-quarior-coup.3.desc:0 "La tentative du coup d'État [FROM.GetAuEnANP] [FROM.GetName] n'a pas aboutie."
+  useful-events-quarior-coup.3.a:0 "Forçons les !"
+  useful-events-quarior-coup.3.b:0 "C'est dommage."
