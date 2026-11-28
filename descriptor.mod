@@ -1,4 +1,4 @@
-version="0.6"
+version="0.6.1"
 picture="thumbnail.png"
 tags={
 	"Balance"
@@ -11,5 +11,5 @@ tags={
 	"Events"
 }
 name="Hearts of Francophone"
-supported_version="1.19.*"
+supported_version="1.20.*"
 remote_file_id="3835344061"

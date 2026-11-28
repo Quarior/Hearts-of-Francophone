@@ -7,8 +7,8 @@
 	NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
 
 	-- CAREER PROFILE
-	NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "Hearts of Mod"
-	NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "Hearts of Mod"
+	NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "Hearts of Francophone"
+	NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "Hearts of Francophone"
 
 	-- POLITICAL POWER
 	NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.15	-- Weekly increase of PP. (default = 2)
@@ -134,9 +134,6 @@
 
 	-- Save focus
 	NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
-
-	-- Cost of garentie
-	NDefines.NDiplomacy.GUARANTEE_COST = 9999   -- Coût d'une garentie d'indépendence
 
     -- QQL 
 	NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0     -- Removed for game stability/reducing chance of desync
